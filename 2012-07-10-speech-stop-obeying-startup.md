@@ -3,7 +3,7 @@
 [title]: 學生論壇 - 不馴，以創業顛覆凡想
 [name]: speech-stop-obeying-startup
 [tag]: speech | 演講, startup | 創業
-[photo]: 
+[photo]: http://i.minus.com/jb1brlzGffnAUR.png
 -->
 
 
