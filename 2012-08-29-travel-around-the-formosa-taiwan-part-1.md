@@ -106,23 +106,25 @@
 
 還遇到一位有心人士，他一邊環島著一邊找 1000 個人與他的求婚板拍照並錄影，在這祝福他求婚成功！
 
-![求婚][p22]
+![求婚][p17]
 
 眼看時間也差不多該吃晚餐，並回火車站託運搭火車了。我們就來到了火車站附近找晚餐，結果找了一間無敵貴的鐵路便當！但都進來人家店裡了也不好意思出去了，就將就了吧。吃飽就去行李房寄車，接著我們也搭上了自強號前往羅東了。
 
-![鐵路便當＆車票][p17]
+![鐵路便當＆車票][p18]
 
 搭了一個小時左右的車，也抵達羅東了。我們就在附近找了間旅館下塌，是說這間旅館本來想坑我們兩間雙人房的錢，一直看我們猶豫不決才說可以加床！一如往的，我們一進房間就先看了三國…。看完後步行前往羅東夜市，來到宜蘭一定要吃個三星蔥！！我們就買了三星蔥餅，我本身不是很喜歡吃蔥，但三星蔥餅我真的得給他個讚，第一次覺得蔥好吃好香！另外還吃了個卜肉，不曉得這是不是肉渣之類的東西？！最後還去吃了「**包心粉圓**」，粉圓是我最愛的甜食之一所以也必吃！這包心粉圓配上白目耳超級好吃，而且粉圓很Q，裡面還包了紅豆，吃起來別有一番風味！吃飽後就回旅館睡覺結束這天啦！
+
+![羅東夜市][p19]
 
 # Day 5
 
 因為機車大概要接近中午才會到，我們也因此有個理由睡到十點了，十點再起床整理行李去火車站領車。然後往**南方澳**，其實這樣的行程有點繞路了。到南方澳後地一件事就是吃午餐，這邊的海鮮應該頗有名吧？！我們就點了些海鮮吃，然後到媽祖廟拜拜，看看漁港。最後再去**豆腐岬**，但豆腐岬好像有點無聊，去了整個不知道要幹嘛我們就離開了＝ ＝。
 
-![海鮮＆漁港＆豆腐岬][p19]
+![海鮮＆漁港＆豆腐岬][p20]
 
 接下來我們就要前往台灣的極東點－**三貂角燈塔**！帶一個多小時車程後終於抵達三貂角，路上看到旁邊有個停車場就停了進去，然後開始爬山登上三貂角燈塔。身上背著行李爬這些樓梯，真是爬的我們上氣不接下氣了，一路上就休息了三次，不知道是不是我們太弱了。就在我們終於抵達燈塔所在位置食，竟然看到有汽機車…突然覺得自己有點蠢，我對不起我的夥伴們。一上三貂角這就看到有新人在拍婚紗！這裡還滿多可愛的小涼亭，還有些愛心形狀的裝飾，根本就是要新人們來這拍婚紗XD。
 
-![三貂角燈塔][p20]
+![三貂角燈塔][p21]
 
 在亂拍了些照後，我們再度出發前往下一隔目的地－**福隆海水浴場**。一路上是蜿蜒的公路，並且充滿了超多砂石車！！
 
@@ -134,7 +136,7 @@
 
 我晚上無聊想說去看個星星好了，可惜滿天的雲層也看不到星星真傷心，只能看些夜景了，看看公路從山上蜿蜒而下其實也滿漂亮的！還在伸手不見五指的黑暗中跑到一片沙灘上去，但黑夜中到沙灘好像有點危險，所以也沒有更加深入，就稍微閒晃一下後離開了。
 
-![福隆夜景][p21]
+![福隆夜景][p22]
 
 （[Part 2][part2] 待續...）
 
@@ -143,26 +145,26 @@
 [wiki]: http://zh.wikipedia.org/wiki/%E8%90%BD%E5%B1%B1%E9%A2%A8
 [part2]: http://kuoe0.ch/1771/travel-around-the-formosa-taiwan-part-2/
 
-[p01]: http://i.minus.com/jbvQtSB1Fio4q9.jpg
-[p02]: http://i.minus.com/j7QAPrAefK7OS.jpg
-[p03]: http://i.minus.com/jbeCcS4KC78TVQ.jpg
-[p04]: http://i.minus.com/jSKHRa6dgWijq.jpg
-[p05]: http://i.minus.com/jF0GCnBYThsxK.jpg
-[p06]: http://i.minus.com/jnK92z1jnYUtr.jpg
-[p07]: http://i.minus.com/jbfAV00vErITuy.jpg
-[p08]: http://i.minus.com/jb2H31SKPX62Xp.jpg
-[p09]: http://i.minus.com/j34m2CBU8cUTu.jpg
-[p10]: http://i.minus.com/jGZbfvhGmCHOH.jpg
-[p11]: http://i.minus.com/jx1NHVwh20Pds.jpg
-[p12]: http://i.minus.com/j3f7AEZQqBXW8.jpg
-[p13]: http://i.minus.com/j2VDnmGw1NL3s.jpg
-[p14]: http://i.minus.com/jx0YPMGl3TAV3.jpg
-[p15]: http://i.minus.com/j5jZJngEmPR0U.jpg
-[p16]: http://i.minus.com/jb2GyLUVyCDM5j.jpg
-[p17]: http://i.minus.com/jJuyQAOzCiC6.jpg
-[p18]: http://i.minus.com/jGhoeD0IsJMQC.jpg
-[p19]: http://i.minus.com/jbuh2Y5ZgWswWw.jpg
-[p20]: http://i.minus.com/jsYpvDOpcLoTU.jpg
-[p21]: http://i.minus.com/jrNihNyJUOspe.jpg
-[p22]: http://i.minus.com/jgKt68PTqsBZk.jpg
+[p01]: http://i.minus.com/jyzkDojItdBWI.jpg
+[p02]: http://i.minus.com/jbd3pxfPfugr9P.jpg
+[p03]: http://i.minus.com/jJ1xya88sms4s.jpg
+[p04]: http://i.minus.com/jbldsYHRoZOqfa.jpg
+[p05]: http://i.minus.com/jbrN78MbesoAlh.jpg
+[p06]: http://i.minus.com/jyO80Pf80c8ed.jpg
+[p07]: http://i.minus.com/jbdrXnkKQJ2OVS.jpg
+[p08]: http://i.minus.com/jXedTRs5561vi.jpg
+[p09]: http://i.minus.com/jbyPdljD3Fq8sG.jpg
+[p10]: http://i.minus.com/jGSiFNJTobT7h.jpg
+[p11]: http://i.minus.com/jCLmJUDSnLYSE.jpg
+[p12]: http://i.minus.com/jm2GHn3GVV0Bg.jpg
+[p13]: http://i.minus.com/jB4NYymEoIpuz.jpg
+[p14]: http://i.minus.com/jbg8E5iAQ44BsJ.jpg
+[p15]: http://i.minus.com/jbwdnQgH2IAYEz.jpg
+[p16]: http://i.minus.com/j2mNRxg6AWXbh.jpg
+[p17]: http://i.minus.com/j77A3VrsOsk4G.jpg
+[p18]: http://i.minus.com/jbvDo8omMlGa8m.jpg
+[p19]: http://i.minus.com/jWREdn9kmfplE.jpg
+[p20]: http://i.minus.com/jSRu8IxjHRjE7.jpg
+[p21]: http://i.minus.com/j5SZc6EXYSGPf.jpg
+[p22]: http://i.minus.com/jV0AqgsFgMbCk.jpg
 
