@@ -1,8 +1,8 @@
 <!--
 [date]: 2012-09-12
 [titel]: 關於 PermaLink
-[title]: about-PermaLink
-[tag]: PermaLink | 永久鏈結, web dev | 網頁開發, SEO | 搜尋引擎最佳化
+[title]: about-permalink
+[tag]: permalink | 永久鏈結, web dev | 網頁開發, SEO | 搜尋引擎最佳化
 [photo]: http://i.minus.com/jf08FqLl8RSZ9.png
 -->
 
@@ -14,7 +14,7 @@ PermaLink 其實是 permanent link 的意思，也就是「永久鏈結」，也
 
 不僅僅是對使用者來說不便，對於對於搜尋引擎也一樣，搜尋引擎將無法取得個篇文章的鏈結，所以搜尋引擎關於你的文章的結果都僅會顯示**首頁**。因為首頁是整個網站中唯一存在的真實鏈結！
 
-在使用 wordpress 時，可以不必擔心這個問題！wordpress 本身就有提供每一篇文章的預設 PermaLink，形式為 **yourdomainname/?p=post_id**。
+在使用 wordpress 時，可以不必擔心這個問題！wordpress 本身就有提供每一篇文章的預設 PermaLink，形式為 `yourdomainname/?p=post_id`。
 
 這是採用 http 中的 get 請求從首頁請求文章內容的作法，而這種形式的 PermaLink 除了很醜外，也沒有其他作用了！
 
@@ -46,12 +46,9 @@ PermaLink 的結構究竟怎麼設計比較好，網路上也有許多討論，�
 
 另外關於使用中文於 PermaLink 中時，其順序也很重要，因為每個瀏覽器處理 url 編碼的方法不一，小心因此而使得訪客無法瀏覽文章只獲得 404 Error！關於該問題可以參考 xdite 前輩的「[Yahoo News 的 SEO 網址所帶來的問題][1]」，裡頭有更詳盡的解說。
 
-我也因為 xdite 前輩的文章而決定將 PermaLink 的結構設定為 **domainname/post_id/post_title**，以避免我有需要使用中文作為網址時，我的文章還可以使用 **domainname/post_id** 連結！
+我也因為 xdite 前輩的文章而決定將 PermaLink 的結構設定為 `domainname/post_id/post_title`，以避免我有需要使用中文作為網址時，我的文章還可以使用 `domainname/post_id` 連結！
 
 
 [1]:http://blog.xdite.net/posts/2011/10/25/yahoo-seo-url/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+xxddite+%28Blog.XDite.net%29
 
 [wiki-seo]: http://en.wikipedia.org/wiki/Search_engine_optimization
-
-
-
