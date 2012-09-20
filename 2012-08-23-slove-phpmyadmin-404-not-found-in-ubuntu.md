@@ -1,8 +1,8 @@
 <!--
 [date]: 2012-08-23
-[title]: 解決 ubuntu 下 phpMyAdmin 的 404 Not Found 頁面
+[title]: 解決 Ubuntu 下 phpMyAdmin 的 404 Not Found 頁面
 [name]: slove-phpmyadmin-404-not-found-in-ubuntu
-[tag]: ubuntu, Linux, database | 資料庫
+[tag]: ubuntu, Linux, database | 資料庫, phpMyAdmin
 [photo]: http://i.minus.com/jeD68dMmYaV6F.png
 -->
 
