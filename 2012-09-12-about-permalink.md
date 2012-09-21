@@ -2,7 +2,7 @@
 [date]: 2012-09-12
 [titel]: 關於 PermaLink
 [title]: about-permalink
-[tag]: permalink | 永久鏈結, web dev | 網頁開發, SEO | 搜尋引擎最佳化
+[tag]: PermaLink | 永久鏈結, web dev | 網頁開發, SEO | 搜尋引擎最佳化
 [photo]: http://i.minus.com/jf08FqLl8RSZ9.png
 -->
 
