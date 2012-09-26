@@ -3,7 +3,7 @@
 [titel]: 解決 nautilus 3 資料夾上 dropbox 同步符號消失
 [title]: solve-the-dropbox-sync-symbol-disappear-in-naultilus-3
 [tag]: Ubuntu, Linux, Dropbox
-[photo]: 
+[photo]: http://i.minus.com/jbuADYTU24BwXF.png
 -->
 
 我目前的桌面管理套件為 [Cinnamon][1]，是一套非常優雅漂亮的桌面系統。實在用不習慣 [unity][2] 與 [GNOME-Shell][3]，unity 實在難用到爆，而 GNOME-Shell 在平鋪預覽視窗時較不規則，比較喜歡 Cinnamon 對齊的平鋪風格。而 Cinnamon 本身也是衍生自 [GNOME 3][3]，因此會遇到安裝 Dropbox 後，Dropbox 資料夾上不會顯示同步狀態。
