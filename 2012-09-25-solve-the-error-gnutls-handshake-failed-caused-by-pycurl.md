@@ -41,7 +41,7 @@
 ### 使用 OpenSSL 編譯 pycurl
 
 	$ sudo apt-get install build-essential fakeroot dpkg-dev
-	$ mkdir ~/ython-pycurl-openssl
+	$ mkdir ~/python-pycurl-openssl
 	$ cd ~/python-pycurl-openssl
 	$ sudo apt-get source python-pycurl
 	$ sudo apt-get build-dep python-pycurl
