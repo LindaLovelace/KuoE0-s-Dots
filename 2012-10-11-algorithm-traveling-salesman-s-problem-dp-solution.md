@@ -8,7 +8,7 @@
 
 NCPC 快到了，快兩年沒練題目，演算法也忘的差不多了。今天系內賽遇到 TSP 的題目一直 Wrong Answer，與同學討論時，因為自己已經忘了演算法細節，實在無法為自己的作法爭辯，決定再重新推敲該演算法。
 
-**Traveling Salesman's Problem**，中文翻譯滿多種了，有**旅行商問題**、**推銷員問題**、**貨郎問題**等等，所以直接採用英文縮寫 **TSP** 稱之比較方便！該問題是圖論上的經典問題，目前已被證明為 [NP-Hard][1] 問題，有興趣請自行參閱相關資料。另外，TSP 可以 reduce 為 [Hamiltonian Cycle][2] 問題。
+**Traveling Salesman's Problem**，中文翻譯滿多種了，有**旅行商問題**、**推銷員問題**、**貨郎問題**等等，所以直接採用英文縮寫 **TSP** 稱之比較方便！該問題是圖論上的經典問題，目前已被證明為 [NP-Hard][1] 問題，有興趣請自行參閱相關資料。另外，TSP 有一特例為 [Hamiltonian Cycle][2]，當所有路徑長度都為 1 時，即為 [Hamiltonian Cycle][2] 問題。（感謝 [DJWS][7] 前輩的指正）
 
 問題描述
 ========
@@ -86,3 +86,4 @@ Source on [Gist][6]
 [4]: http://www.flickr.com/photos/tetsu-k/393957103/
 [5]: https://gist.github.com/3872341#file_pseudo%20code
 [6]: https://gist.github.com/3872341#file_gt_tsp_dp.cpp
+[7]: http://www.csie.ntnu.edu.tw/~u91029/
