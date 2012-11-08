@@ -1,14 +1,16 @@
 <!--
 [date]: 2011-05-04
-[title]: [PKU] 1094 - Sorting It All Out
-[name]: pku-1094-sorting-it-all-out
-[tag]: programming | 程式編寫, PKU, topological sort | 拓樸排序, graph theory | 圖論
+[title]: [POJ] 1094 - Sorting It All Out
+[name]: poj-1094-sorting-it-all-out
+[tag]: POJ, topological sort | 拓樸排序, graph theory | 圖論
 -->
 
-#### 題目網址
-[\[1094 - Sorting It All Out\]][1]
+題目網址
+--------------
+[1094 - Sorting It All Out][1]
 
-## 題目概述
+題目概述
+======
 
 給定 **n** 個大寫字母的 **m** 組順序關係（使用 < 符號），並判定是否存在唯一的順序、存在矛盾或是無法判定。
 
@@ -18,17 +20,20 @@
 - A < B，B < A => 存在矛盾
 - A < B，B < C，A < D，D < C => 無法判定
 
-#### Technique Detail
+Technique Detail
+----------------------
 
 > - 字母數量 **n**, 1 ≤ n ≤ 26
 
-#### 輸入格式
+輸入格式
+----------
 
 每一筆測試資料由兩個整數（n m）開始，表示要使用大寫字母的前 n 個，且有 m 組規則。接下來有 m 行，每行都是一組規則（letter<sub>1</sub> < letter<sub>2</sub>），表示 letter<sub>1</sub> 的順序在 letter<sub>2</sub> 前面。
 
 當測試資料的 n 與 m 皆為 0 時，表示程式終止。
 
-#### 輸出格式
+輸出格式
+----------
 
 對於每一筆測試資料，輸出只有一行，根據結果有不同的輸出。
 
@@ -42,7 +47,8 @@
 
 ---
 
-## 解題思路
+解題思路
+========
 
 這題很明顯就是拓樸排序，找出所給的關係圖之唯一拓樸排序。由於 n 很小，因此每次加入一個規則就做一次拓樸排序在時間上應相當足夠。
 
@@ -50,8 +56,12 @@
 
 若讀完所有測資仍找不到解，在輸出非上述兩者的選項。若在第 x 個規則找到唯一順序，儘管第 x + k 個規則產生矛盾也不予理會，以最先找到的解為主。
 
-## Source Code
+Source Code
+-----------------
 
 <script src="https://gist.github.com/1616119.js?file=1094%20%E2%80%93%20Sorting%20It%20All%20Out.cpp"></script>
 
+Source Code on [gist][2]
+
 [1]: http://poj.org/problem?id=1094 "1094 - Sorting It All Out"
+[2]: https://gist.github.com/1616119
