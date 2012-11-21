@@ -32,7 +32,7 @@ APT 是 Debian 下的套件管理器，Ubuntu 衍生自 Debian，因此自然而
 	
 找到不希望被更新的套件名稱，並將該套件庫後面所接著的 **install** 替換成 **hold** 並存檔離開。
 
-接著再輸入指令 `dpkg --set-selecetions < packages`。如此一來，對於該套件的設定就完成了！
+接著再輸入指令 `dpkg --set-selections < packages`。如此一來，對於該套件的設定就完成了！
 
 dpkg 是 APT 的底層工具，因此我們可以直接使用他來進行設定。上列的方法中，會看到 `--get-selections` 這個參數，表示將當前的套件庫狀態輸出。而 `--set-selections` 則是將輸入的設定寫進套件庫。
 
