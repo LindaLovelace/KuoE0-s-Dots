@@ -146,6 +146,8 @@ PB 題意給定四組數列，在這四組數列中個挑出一個數字，試�
 
 ![][p12]
 
+[1]: http://codeforces.com/
+
 [p1]: http://i.minus.com/jbhKihw7STIPBL.jpg
 [p2]: http://i.minus.com/jbrTNqVEyiSDYQ.jpg
 [p3]: http://i.minus.com/j7JX7GtxUgCdR.jpg
