@@ -140,13 +140,13 @@ ACM-ICPC 的題目絕大部份都是一次的測試中，會有非常多比測�
 
 有些題目會告訴我們讀到什麼樣的測試資料時，表示程式中止，而沒指定中止條件的則是判斷是否讀到「**檔案結尾（EOF）**」！以下是三種不同讀取資料的方式，以及其判斷 EOF 的方式：
 
-**scanf**
+**`scanf`**
 
 	while (scanf() != EOF) {		// do something	}
-**fgets**
+**`fgets`**
 	while (fgets() != NULL) {		// do something	}
 
-**cin**
+**`cin`**
 
 	while (cin >> x) {		// do something	}
 
@@ -201,7 +201,7 @@ ACM-ICPC 的題目絕大部份都是一次的測試中，會有非常多比測�
 
 在 C 裡面，可以利用 `gets` 或 `fgets` 來完成，不過 `gets` 這個 function 有些危險，使用的話編譯器會跳出「**警告**」，但其實還是可以用就是了。以下是 `gets` 與 `fgets` 的範例：
 
-**`gets`*
+**`gets`**
 
 	char buf[ 100 ];
 	while ( gets( buf ) ) {
