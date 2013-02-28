@@ -79,8 +79,9 @@ Source Code
 
 ![compare][p1]
 
-資料數量 | bubble sort | bubble sort with flag
+資料數量 | bubble sort | insertion sort
 ---|---|---
+50|0.01|0.01
 100|0.02|0.02
 500|0.39|0.40
 1000|1.51|1.53
