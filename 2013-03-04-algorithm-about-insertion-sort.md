@@ -1,5 +1,5 @@
 <!--
-[date]: 2013-02-28
+[date]: 2013-03-04
 [title]: [Algorithm] 淺談 insertion sort
 [name]: algorithm-about-insertion-sort
 [tag]: ACM-ICPC, sort | 排序, algorithm | 演算法
