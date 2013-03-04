@@ -62,7 +62,7 @@ Source Code
 
 <script src="https://gist.github.com/KuoE0/5076854.js"></script>
 
-Source on [Gist][3]
+Source code on [Gist][3]
 
 效能比較
 ----------
@@ -90,16 +90,19 @@ Source on [Gist][3]
 
 <script async class="speakerdeck-embed" data-id="f1d95110664c0130a01622000a9f2f1e" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 
-另外有 [Wikipedia][4] 上的示意動畫，我覺得滿酷的！！
+Slide on [Speaker Deck][4]
+
+另外有 [Wikipedia][5] 上的示意動畫，我覺得滿酷的！！
 
 ![insertion sort][p2]
 
 (photo via [Giandomenico Ricci][2], CC License)
 
-[1]: http://kuoe0.ch/2111/acm-icpc-about-bubble-sort/
+[1]: http://kuoe0.ch/2111/algorithm-about-bubble-sort/
 [2]: http://www.flickr.com/photos/giando/434250668/
 [3]: https://gist.github.com/KuoE0/5076854#file-insertionsort-cpp
-[4]: http://zh.wikipedia.org/wiki/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F
+[4]: https://speakerdeck.com/kuoe0/insertion-sort
+[5]: http://zh.wikipedia.org/wiki/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F
 
 [p1]: http://i.minus.com/j9n3WCDmDHPGW.jpg
 [p2]: http://upload.wikimedia.org/wikipedia/commons/2/25/Insertion_sort_animation.gif
