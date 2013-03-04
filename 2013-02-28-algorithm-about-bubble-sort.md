@@ -57,7 +57,7 @@ pseudo code
 		flag = false
 		for j in [ 0, n - 1 - i ]
 			if A[ j ] > A[ j + 1 ]
-				swap( A[ j ], A[ j + 1 ] )
+				swap A[ j ] and A[ j + 1 ]
 				flag = true
 		if flag is false
 			break
