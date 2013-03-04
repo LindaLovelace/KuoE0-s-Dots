@@ -1,8 +1,8 @@
 <!--
 [date]: 2013-02-28
-[title]: [ACM-ICPC] 淺談 bubble sort
-[name]: acm-icpc-about-bubble-sort
-[tag]: ACM-ICPC, sort | 排序
+[title]: [Algorithm] 淺談 bubble sort
+[name]: algorithm-about-bubble-sort
+[tag]: ACM-ICPC, sort | 排序, algorithm | 演算法
 [photo]: http://i.minus.com/j5FW0jRmWXcc6.jpg
 -->
 
@@ -70,9 +70,13 @@ Source Code
 
 <script src="https://gist.github.com/KuoE0/5051092.js?file=bubbleSort.cpp"></script>
 
+Source code on [Gist][2]
+
 **flag 版本**
 
 <script src="https://gist.github.com/KuoE0/5051092.js?file=bubbleSort-flag.cpp"></script>
+
+Source code on [Gist][3]
 
 效能比較
 ----------
@@ -97,11 +101,21 @@ Source Code
 
 以下的投影片中有 bubble sort 的執行過程，有興趣可以前往參考！
 
-<script async class="speakerdeck-embed" data-id="2084b75063150130cd7122000a9f0426" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-id="6abcbcc066bb0130d5d922000aa60c83" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 
+Slide on [Speakerdeck][4]
+
+另外在 [Wikipedia][5] 上的示意動畫也非常有趣！
+
+![bubble sort][p2]
 
 (photo via [Jeff Kubina][1], CC License)
 
 [1]: http://www.flickr.com/photos/kubina/153872024/
+[2]: https://gist.github.com/KuoE0/5051092#file-bubblesort-cpp
+[3]: https://gist.github.com/KuoE0/5051092#file-bubblesort-flag-cpp
+[4]: https://speakerdeck.com/kuoe0/bubble-sort
+[5]: http://zh.wikipedia.org/wiki/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F
 
-[p1]: http://i.minus.com/jIY81uuq6REgK.jpg
+[p1]: http://i.minus.com/jpU8cQU9SXKQZ.jpg
+[p2]: http://upload.wikimedia.org/wikipedia/commons/3/37/Bubble_sort_animation.gif
