@@ -89,5 +89,5 @@ Slide on [Speaker Deck][4]
 [5]: http://zh.wikipedia.org/wiki/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F
 [6]: http://www.flickr.com/photos/billselak/4173183227/
 
-[p1]: http://i.minus.com/j0FQ7QEauJtX8.jpg
+[p1]: http://i.minus.com/jbay4197QZ4RM0.jpg
 [p2]: http://upload.wikimedia.org/wikipedia/commons/b/b0/Selection_sort_animation.gif
