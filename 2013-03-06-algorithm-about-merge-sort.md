@@ -35,13 +35,32 @@ Merge sort 採用 divide & conquer 的策略，該策略是不斷地將原數列
 
 在空間複雜度上，一樣先從切割的部份開始，若每次遞迴式都使用相同的數列空間，那麼在切割時不需要額外申請空間，所以時間複雜度為 O(1)。若是每次都替子數列申請新的記憶體空間，那麼空間複雜度就為 O(*n*)。而在合併的部份，如果從頭到尾都使用相同的數列空間，但在合併時為了避免覆蓋還未比較的元素，勢必也需要另外申請一個長度為 n 的數列空間以存放合併結果，因此空間複雜度為 O(*n*)。若是有替子數列申請記憶體空間的話，在合併時就可以使用原來的數列空間，空間複雜度即為 O(1)，因此每個遞迴式的空間複雜度皆為 O(*n*)。前面也算過了遞迴式會執行 log<sub>2</sub> 次，所以空間複雜度為 O(*n*log<sub>2</sub>*n*)。
 
+優化 merge sort
+---------------
+
+**Natural Merge Sort**
+
+這邊介紹一個改進的方法，稱之為 **natural merge sort**。除了完全逆序的狀況外，該作法是利用數列內已存在的有序數列片段來減少切割的次數。若已知一個數列已有序，則該數列不需要再遞迴進行 merge sort 了，如此一來即可減少遞迴式的呼叫次數。而 natural merge sort 跟一般的 merge sort 的差異僅在切割的部份，合併部分皆相同。以下是其切割的演算法：
+
+1. 申請兩個新的數列空間，分別稱為 A 與 B，並設定數列 A 為使用中數列
+2. 依序遍歷數列元素，並將元素放入使用中數列
+3. 一旦當前遍歷的元小於上一個元素時，將使用中數列換為另一個數列，並將該元素放入
+4. 不斷的重複步驟 2 與步驟 3 直到所有元素被遍歷，並分配到子數列
+5. 若是切割後的子數列 A 與 B 中有任一個為空，表示原數列已有序，則不需在遞迴排序子數列
+5. 若子數列 A 與 B 皆不為空，則繼續遞迴排序
+
+可以發現這樣的作法理論上可以省去許多的遞迴呼叫，除非完全逆序才有可能發生切割到一塊的狀況，否則幾乎都可以提前回傳不需要再進一步切割排序。
+
 pseudo code
 -----------------
+
+**Tradition Merge Sort**
 
 	function merge_sort( A ):
 		if length( A ) == 1
 			return
 		
+		// divide
 		mid = length( A ) / 2
 		left = A[ i, mid )
 		right = A[ mid, length( A ) ]
@@ -49,6 +68,7 @@ pseudo code
 		merge_sort( left )
 		merge_sort( right )
 		
+		// merge
 		for i in [ 0, n )
 			if left is empty
 				A[ i ] = first( right )
@@ -65,51 +85,101 @@ pseudo code
 	
 		return
 		
+**Natural Merge Sort**
+
+這邊我僅僅寫出切割的部分，合併的部分都僅用 merge 表示：
+
+	function naturalMergeSort( A ):
+		B, C are empty sequence
+		CUR refer to B
+		
+		LAST = A[ 0 ]
+		
+		while A is not  empty
+			if first( A ) >= LAST
+				append first(A) to CUR
+				LAST = first( A )
+				A = rest( A )
+			else 
+				if CUR refer to B
+					CUR refer to C
+				else
+					CUR refer to B
+				LAST = first( A )
+				
+		if B is empty or C is empty
+			return
+		
+		naturalMergeSort( B )
+		naturalMergeSort( C )
+		
+		A = merge( B, C )
+		
+		
+			
+			
+
+		
 Source Code
 ----------------
 
-<script src="https://gist.github.com/KuoE0/5091967.js"></script>
+**Tradition Merge Sort**
+
+<script src="https://gist.github.com/KuoE0/5091967.js?file=mergeSort.cpp"></script>
 
 Source code on [Gist][1]
+
+**Natural Merge Sort**
+
+<script src="https://gist.github.com/KuoE0/5091967.js?file=mergeSort-natural.cpp"></script>
+
+Source code on [Gist][2]
 
 效能比較
 ----------
 
-雖然拿時間複雜度 O(*n*log<sub>2</sub>*n*) 跟 O(*n*) 的比實在不公平，但還是拿 O(*n*) 中最快的 insertion sort 來比較好了！
+雖然拿時間複雜度 O(*n*log<sub>2</sub>*n*) 跟 O(*n*<sup>2</sup>) 的比實在不公平，但還是拿 O(*n*<sup>2</sup>) 中最快的 insertion sort 來比較好了！
 
 ![compare][p1]
 
-資料數量 | insertion sort | merge sort
----|---|---
-50|0.01|0.01
-100|0.01|0.02
-500|0.16|0.09
-1000|0.60|0.18
-2500|3.55|0.47
-5000|14.00|0.98
-7500|27.37|1.37
-10000|55.61|2.06
+資料數量 | insertion sort | merge sort | natural merge sort
+---|---|---|---
+50|0.01|0.01|0.01
+100|0.01|0.02|0.03
+500|0.16|0.09|0.14
+1000|0.60|0.18|0.29
+2500|3.55|0.47|0.76
+5000|x|0.98|1.55
+7500|x|1.37|2.18
+10000|x|2.06|3.17
+100 *|x|0.18|0.09
+1000 *|x|0.22|0.11
+10000 *|x|1.91|0.76
 
-以上測試資料皆為 100 組，單位為秒 (second)。
+
+以上測試資料皆為 100 組，單位為秒 (second)，其中有星號的測試資料表示數列本身是由多組有序數列組成。欄位中標示 x 表示數值與其它欄位差異過大，為了避免圖表因該數據使得上現過大，而無法觀察細微部分，故移除該資料。
 
 除了少於等於 100，發現有給 insertion sort 略勝的機會，但從 500 以後漸漸的可以發現 insertion sort 完全被虐爆。相信大家都可以感覺到 O(*n*log<sub>2</sub>*n*) 與 O(*n*<sup>2</sup>) 得明顯差異了，並且隨著 n 的增長，效能的增進也更加明顯！
+
+在表中可以發現 natural merge sort 似乎沒有預期的表現較佳，反而慘敗！！推估是在切割時耗費太多時間在進行比較，不像一般的 merge sort 直接對半切割，不需要進行任何比較操作。但在另一些特別設計為多組有序數列組成的測試資料中，即可發現 natural merge sort 還是有著顯著的效能增進！可惜大部份亂序資料的狀況下，要有多組有序數列組成的狀況可能就較少了。
 
 以下的投影片中有 merge sort 的執行過程，有興趣可以前往參考！
 
 <script async class="speakerdeck-embed" data-id="2c4cff1067f301306a3822000a1f8082" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 
-Slide on [Speaker Deck][2]
+Slide on [Speaker Deck][3]
 
-[Wikipedia][3] 上的示意動畫：
+[Wikipedia][4] 上的示意動畫：
 
 ![merge sort][p2]
 
-(photo via [billaday][4], CC License)
+(photo via [billaday][5], CC License)
 
 [1]: https://gist.github.com/KuoE0/5091967#file-mergesort-cpp
-[2]: https://speakerdeck.com/kuoe0/merge-sort
-[3]: http://zh.wikipedia.org/zh-tw/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F
-[4]: http://www.flickr.com/photos/kecko/64801051/
+[2]: https://gist.github.com/KuoE0/5091967#file-mergesort-natural-cpp
+[3]: https://speakerdeck.com/kuoe0/merge-sort
+[4]: http://zh.wikipedia.org/zh-tw/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F
+[5]: http://www.flickr.com/photos/kecko/64801051/
 
-[p1]: http://i.minus.com/jwzuA5UrDz6F6.jpg
+[p1]: http://i.minus.com/jboI0iAhhdsdBX.jpg
 [p2]: http://upload.wikimedia.org/wikipedia/commons/c/c5/Merge_sort_animation2.gif
