@@ -1,31 +1,20 @@
 <!--
-[title]:	 About Me
+[title]: About Me
 [name]:   about-me
 [author]: KuoE0
 -->
 
-KuoE0
-=====
+郭至軒
+------
 
-目前於成大資訊工程所攻讀碩士，屬於 [WMMKS Lab][1] (Web Mining and Multilingual Knowledge System)，研究利用自然語言處理來進行網路資料探勘。
+綽號：KuoE0
 
-曾經不愛唸書整天無所事事，突然發覺對不起父母，認為自己不該浪費父母犧牲青春所換來的教育，而決定好好學習。不期望自己有什麼豐功偉業，只求未來有能力照顧父母，以回報這輩子都還不完的恩情。喜歡隨心所欲的生活，對這個世界中的一切充滿了興趣，尤其是資訊科技，喜歡什麼知識都沾一點，也導致許多技能學藝不精，但讓我體會了更多關於我們活著的這世界。
+目前於成大資訊工程所攻讀碩士，研究利用僅存的學生時光來學習更多的事物與結交更多的朋友。興趣廣泛，但學藝不精。
 
-Find Me
--------
+**E-mail**：tommy790506 [at] hotmail.com
 
- 　 | 　
--------------|----
-**E-mail**   | tommy790506 [at] hotmail.com
-**Facebook** | [Chih-Hsuan Kuo][2]
-**Google+**  | [Chih-Hsuan Kuo][3]
-**LinkedIn** | [Chih-Hsuan Kuo][4]
+> 真正的男子漢 programmer 是不會用那些亂七八糟，花枝招展的所謂整合開發環境。真正的男子漢programmer就是直接用 emacs，或是 vi 這些男子漢編輯器直接寫程式。如果你不知道這是甚麼東東，簡單來說，就是男子漢用的「記事本」。當然在花枝招展，看來很娘的 Wxxxxws 下要找到這些男子漢編輯器有一定難度，但這絕對難不倒一個真正的男子漢 programmer。
 
+> 另外真正的男子漢也不會用那些亂七八糟，花枝招展的所謂應用程式寫網頁。真正的男子漢就是直接用 emacs, 或是 vi 這些男子漢編輯器直接寫 HTML，因為那些亂七八糟，花枝招展的所謂應用程式寫出來的網頁加了一大堆亂七八糟的 tag 根本沒有人看得懂。
 
-
-[1]: http://wmmks.csie.ncku.edu.tw/
-[2]: http://www.facebook.com/KuoE0
-[3]: https://plus.google.com/117191263661376703880
-[4]: http://www.linkedin.com/profile/view?id=124997460
-
-
+> －Re: 男子漢理論,pangfeng (P老師)@pangfeng, ptt2.cc
