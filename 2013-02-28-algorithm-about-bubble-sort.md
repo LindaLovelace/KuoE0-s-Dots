@@ -1,7 +1,7 @@
 <!--
 [date]: 2013-02-28
-[title]: [Algorithm] 淺談 bubble sort
-[name]: algorithm-about-bubble-sort
+[title]: [Sort] 淺談 bubble sort
+[name]: sort-about-bubble-sort
 [tag]: ACM-ICPC, sort | 排序, algorithm | 演算法
 [photo]: http://i.minus.com/j5FW0jRmWXcc6.jpg
 -->

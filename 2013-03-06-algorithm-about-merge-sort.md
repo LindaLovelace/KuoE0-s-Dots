@@ -1,7 +1,7 @@
 <!--
 [date]: 2013-03-06
-[title]: [Algorithm] 淺談 merge sort
-[name]: algorithm-about-merge-sort
+[title]: [Sort] 淺談 merge sort
+[name]: sort-about-merge-sort
 [tag]: ACM-ICPC, sort | 排序, algorithm | 演算法
 [photo]: http://i.minus.com/j8ZJkWieqa4Za.jpg
 -->

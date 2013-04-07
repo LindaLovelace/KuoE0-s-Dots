@@ -1,7 +1,7 @@
 <!--
 [date]: 2013-03-04
-[title]: [Algorithm] 淺談 insertion sort
-[name]: algorithm-about-insertion-sort
+[title]: [Sort] 淺談 insertion sort
+[name]: sort-about-insertion-sort
 [tag]: ACM-ICPC, sort | 排序, algorithm | 演算法
 [photo]: http://i.minus.com/jWdqePa80Vxau.jpg
 -->
@@ -98,7 +98,7 @@ Slide on [Speaker Deck][4]
 
 (photo via [Giandomenico Ricci][2], CC License)
 
-[1]: http://kuoe0.ch/2111/algorithm-about-bubble-sort/
+[1]: http://kuoe0.ch/2111/sort-about-bubble-sort/
 [2]: http://www.flickr.com/photos/giando/434250668/
 [3]: https://gist.github.com/KuoE0/5076854#file-insertionsort-cpp
 [4]: https://speakerdeck.com/kuoe0/insertion-sort

@@ -1,7 +1,7 @@
 <!--
 [date]: 2013-03-05
-[title]: [Algorithm] 淺談 selection sort
-[name]: algorithm-about-selection-sort
+[title]: [Sort] 淺談 selection sort
+[name]: sort-about-selection-sort
 [tag]: ACM-ICPC, sort | 排序, algorithm | 演算法
 [photo]: http://i.minus.com/jbtwu3JugL0Az5.jpg
 -->
@@ -82,8 +82,8 @@ Slide on [Speaker Deck][4]
 (photo via [billaday][6], CC License)
 
 
-[1]: http://kuoe0.ch/2111/algorithm-about-bubble-sort/
-[2]: http://kuoe0.ch/2120/algorithm-about-insertion-sort/
+[1]: http://kuoe0.ch/2111/sort-about-bubble-sort/
+[2]: http://kuoe0.ch/2120/sort-about-insertion-sort/
 [3]: https://gist.github.com/KuoE0/5080566#file-selectionsort-cpp
 [4]: https://speakerdeck.com/kuoe0/selection-sort
 [5]: http://zh.wikipedia.org/wiki/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F

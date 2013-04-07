@@ -1,7 +1,7 @@
 <!--
 [date]: 2013-03-15
-[title]: [Algorithm] 淺談 quick sort
-[name]: algorithm-about-quick-sort
+[title]: [Sort] 淺談 quick sort
+[name]: sort-about-quick-sort
 [tag]: ACM-ICPC, sort | 排序, algorithm | 演算法
 [photo]:
 -->
@@ -162,7 +162,7 @@ Slide on [Speaker Deck][4]
 
 (photo via [guillermomadrid][4], CC License)
 
-[1]: http://kuoe0.ch/2166/algorithm-about-merge-sort/
+[1]: http://kuoe0.ch/2166/sort-about-merge-sort/
 [2]: https://gist.github.com/KuoE0/5163266#file-quicksort-cpp
 [3]: https://gist.github.com/KuoE0/5163266#file-quicksort-in-place-cpp
 [4]: https://speakerdeck.com/kuoe0/quick-sort
