@@ -1,5 +1,5 @@
 <!--
-[date]: 2013-04-14
+[date]: 2013-04-14-1
 [title]: [GCJ 2013] Qualification Round - A - Tic-Tac-Toe-Tomek
 [name]: gcj-2013-qualification-round-a-tic-tac-toe-tomek
 [tag]: Google Code Jam
