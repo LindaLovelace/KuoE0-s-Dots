@@ -27,7 +27,7 @@ small case
 
 large case
 
-> 1 ≤ T ≤ 10
+> 1 ≤ T ≤ 1000
 
 **輸入格式**
 
