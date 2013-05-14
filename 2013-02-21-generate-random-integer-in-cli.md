@@ -2,7 +2,7 @@
 [date]: 2013-02-21 
 [title]: 在 CLI 下產生隨機整數
 [name]: generate-random-integer-in-cli
-[tag]: CLI | 命令列介面, Unix, Linux, OSX, FreeBSD
+[tag]: CLI | 命令列介面, Unix, Linux, OS X, FreeBSD
 [photo]: http://i.minus.com/j0zessztjR9j5.jpg
 -->
 
