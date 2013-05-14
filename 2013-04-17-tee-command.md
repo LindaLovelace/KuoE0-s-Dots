@@ -2,7 +2,7 @@
 [date]: 2013-04-17
 [title]: tee 指令
 [name]: tee-command
-[tag]: CLI | 命令列介面, FreeBSD, Linux, OSX, Unix
+[tag]: CLI | 命令列介面, FreeBSD, Linux, OS X, Unix
 [photo]: http://i.minus.com/jJbhTFvw543S7.jpg
 -->
 
