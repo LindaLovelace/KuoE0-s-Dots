@@ -29,9 +29,11 @@ Quicklisp 是 Common Lisp 的第三方套件管理套件，就像 Python 的 pip
 
 下載 [http://beta.quicklisp.org/quicklisp.lisp][3] 該檔案，接著再開啓 sbcl 並 load 該檔案。輸入 `sbcl --load quicklisp.lisp` 或是進入 sbcl 的 REPL 後在輸入 `(load "quicklisp.lisp")` 來進行讀取。
 
+如果使用的作業是系統是 Debian 的衍生版的話（例如：Debian、Ubuntu 或 LinuxMint 等等），可以使用 `apt-get install cl-quicklisp` 來進行安裝！安裝後會提示請參考 /usr/share/doc/cl-quicklisp/README.Debian 該檔案來進行安裝，裡面其實就是說明透過 APT 安裝後的 quicklisp.lisp 檔案的位置在 /usr/share/cl-quicklisp/quicklisp.lisp。所以一樣用前面提到的方式來讀入 quicklisp.lisp 檔案就可以了，只需要換一下檔案名稱！
+
 成功讀取 quicklisp.lisp 後，就可以進行安裝了，只要在 sbcl 的 REPL 中輸入 `(quicklisp-quickstart:install)` 就會開始進行下載相關內容並安裝。這時候你會發現你的家目錄出現了一個 quicklisp 的資料夾，所有 Quicklisp 的內容都會放置在該資料夾，包括安裝的套件庫！
 
-如果不想要直接安裝在 ~/quicklisp 這個位置的話，也可以自行指定安裝位置，像我就比較希望他是個隱藏的資料夾，所以我會希望它安裝到 ~/.quicklisp 這個位置。因此我只要把原本的安裝指令中加入 `:path` 這個 keyword，並把欲安裝的位置傳入即可，指令就會變成這樣：`(quicklisp-quickstart:install :path "~/.quicklisp/")`。
+如果不想要直接安裝在 ~/quicklisp 這個位置的話，也可以自行指定安裝位置，像我就比較希望他是個隱藏的資料夾，所以我會希望它安裝到 ~/.quicklisp 這個位置。因此我只要把原本的安裝指令中加入 `:path` 這個 keyword，並把欲安裝的位置傳入即可，指令就會變成這樣：`(quicklisp-quickstart:install :path "~/.quicklisp/")`。**注意：路徑的結尾一定要有斜線！否則，quicklisp 會被安裝到家目錄，而且是所有檔案都分散在家目錄！**
 
 安裝後，如果要使用 Quicklisp 的話，每次在執行 sbcl 時，我們都需要載入 `~/quicklisp/setup.lisp` 該檔案，一樣可以直接用 --load 進行讀取，或是進入 sbcl 的 REPL 後再輸入 load 敘述。
 
@@ -93,6 +95,13 @@ quickload 的說明中也有寫到：
 更新 Quicklisp：`(ql:update-client)`
 
 查詢哪些套件相依於某套件：`(ql:who-depends-on "package-name")`
+
+修改紀錄
+-------
+
+- 2013-05-31: 增加 Debian 衍生版安裝方式
+- 2013-05-31: 自訂安裝位置注意結尾的斜線 (slash)
+
 
 [1]: http://www.quicklisp.org/beta/releases.html
 [2]: http://www.sbcl.org
