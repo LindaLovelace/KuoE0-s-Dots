@@ -35,7 +35,7 @@
 
 代表 ex 開頭的函式有這些，我們再進一步的輸入一個 `i` 並按下 tab 鍵，就會發現 Linedit 自動幫我們補齊了 `t`，這表示 exi 開頭的函式就只有 exit 了，所以就會自動補齊了！
 
-不過要使用 autocomplete 也是要付出些代價的，就是每次 SBCL 開啓的將會增加，因為 Linedit 需要每次都重新載入所有函式庫，所以需要花點時間！如果不希望開啟 SBCL 時載入 Linedit 的話，只要在啟動 SBCL 時加入一項參數 `--no-linedit` 即可！但如果事後又想要手動載入的話，就依序執行以下敘述：
+不過要使用 autocomplete 也是要付出些代價的，就是每次 SBCL 開啓的時間將會增加，因為 Linedit 需要每次都重新載入所有函式庫，所以需要花點時間！如果不希望開啟 SBCL 時載入 Linedit 的話，只要在啟動 SBCL 時加入一項參數 `--no-linedit` 即可！但如果事後又想要手動載入的話，就依序執行以下敘述：
 
 	(require :sb-aclrepl)
 	(require :linedit)
