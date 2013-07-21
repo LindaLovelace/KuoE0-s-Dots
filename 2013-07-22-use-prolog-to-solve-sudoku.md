@@ -22,6 +22,8 @@
 
 <script src="https://gist.github.com/KuoE0/6049175.js"></script>
 
+Source Code on [Gist][6]
+
 首先從第 76 行來看，是程式的進入點，並指定從第 71 行的 sudoku_solver 開始。第 71 行的 sudoku_solver 才是程式的主體，其內容為從 standard input 讀入題目，再進行求解，最後將答案輸出至 standard output。
 
 求解的過程從第 51 行的 solve_sudoku 開始，裡頭只做兩件事情：第一件事情是初始化 Prolog 的知識庫，利用題目來建立已存在 constraint，也就是動態的增加 fact。初始化知識庫後，才真正進行求解。
@@ -55,5 +57,6 @@
 [3]: http://www.swi-prolog.org/pldoc/doc_for?object=transpose/2
 [4]: http://www.karthiknadig.com/2012/03/01/sudoku-in-prolog/
 [5]: http://www.telegraph.co.uk/science/science-news/9359579/Worlds-hardest-sudoku-can-you-crack-it.html
+[6]: https://gist.github.com/KuoE0/6049175
 
 [p1]: http://i.minus.com/jIBWSsYnEOCcF.jpg
