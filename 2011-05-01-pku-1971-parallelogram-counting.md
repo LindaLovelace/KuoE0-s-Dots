@@ -5,19 +5,16 @@
 [tag]: POJ, sort | 排序, computational geometry | 計算幾何
 -->
 
-題目網址
---------------
-[1971 - Parallelogram Counting][1]
+題目網址：[1971 - Parallelogram Counting][1]
 
 題目概述
 ======
 
 給定二維平面上 **N** 個點，求出有幾種組合可以形成平行四邊形。
 
-Technique Detail
-----------------------
+**Technique Detail**
 
-> - 點的數量 **N**, 1 ≤ N ≤ 1,000
+- 點的數量 **N**, 1 ≤ N ≤ 1,000
 
 輸入格式
 ----------
@@ -45,10 +42,10 @@ Technique Detail
 Source Code
 -----------------
 
-<script src="https://gist.github.com/1612017.js?file=1971%20-%20Parallelogram%20Counting.cpp"></script>
+<script src="https://gist.github.com/KuoE0/1612017.js"></script>
 
-Source Code on [gist][2]
+Source code on [gist][gist].
 
 [1]: http://poj.org/problem?id=1971 "1971 - Parallelogram Counting"
-[2]: https://gist.github.com/1612017
+[gist]: https://gist.github.com/1612017
 
