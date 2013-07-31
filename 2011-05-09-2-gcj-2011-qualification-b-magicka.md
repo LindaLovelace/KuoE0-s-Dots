@@ -76,5 +76,7 @@ Source Code
 
 <script src="https://gist.github.com/KuoE0/1619625.js"></script>
 
+Source code on [gist][gist].
+
 [1]: http://code.google.com/codejam/contest/dashboard?c=975485#s=p1 "B - Magicka"
 [gist]: https://gist.github.com/KuoE0/1619625
