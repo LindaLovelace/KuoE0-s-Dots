@@ -53,7 +53,8 @@ large case
 
 > Time Complexity: O( N )
 
-## Source Code
+Source Code
+----------
 
 <script src="https://gist.github.com/KuoE0/1619523.js"></script>
 
