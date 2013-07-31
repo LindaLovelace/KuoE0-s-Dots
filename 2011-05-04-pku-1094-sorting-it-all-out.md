@@ -25,7 +25,7 @@
 輸入格式
 ----------
 
-每一筆測試資料由兩個整數（n m）開始，表示要使用大寫字母的前 n 個，且有 m 組規則。接下來有 m 行，每行都是一組規則（letter<sub>1</sub> < letter<sub>2</sub>），表示 letter<sub>1</sub> 的順序在 letter<sub>2</sub> 前面。
+每一筆測試資料由兩個整數 n, m 開始，表示要使用大寫字母的前 n 個，且有 m 組規則。接下來有 m 行，每行都是一組規則 letter<sub>1</sub> < letter<sub>2</sub>，表示 letter<sub>1</sub> 的順序在 letter<sub>2</sub> 前面。
 
 當測試資料的 n 與 m 皆為 0 時，表示程式終止。
 
