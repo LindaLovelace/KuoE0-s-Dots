@@ -5,9 +5,7 @@
 [tag]: POJ, topological sort | 拓樸排序, graph theory | 圖論
 -->
 
-題目網址
---------------
-[1094 - Sorting It All Out][1]
+題目網址：[1094 - Sorting It All Out][1]
 
 題目概述
 ======
@@ -16,14 +14,13 @@
 
 例如：
 
-- A < B，B < C => 存在唯一的順序ABC
-- A < B，B < A => 存在矛盾
-- A < B，B < C，A < D，D < C => 無法判定
+- A < B，B < C ⇒ 存在唯一的順序ABC
+- A < B，B < A ⇒ 存在矛盾
+- A < B，B < C，A < D，D < C ⇒ 無法判定
 
-Technique Detail
-----------------------
+**Technique Detail**
 
-> - 字母數量 **n**, 1 ≤ n ≤ 26
+- 字母數量 **n**, 1 ≤ n ≤ 26
 
 輸入格式
 ----------
@@ -37,11 +34,11 @@ Technique Detail
 
 對於每一筆測試資料，輸出只有一行，根據結果有不同的輸出。
 
-結果 | 輸出
--|-
-存在唯一順序 | Sorted sequence determined after X relations: Y. 
-無法判定 | Sorted sequence cannot be determined. 
-存在矛盾 | Inconsistency found after X relations. 
+| 結果 | 輸出
+| ---- | ---- |
+| 存在唯一順序 | Sorted sequence determined after X relations: Y. |
+| 無法判定 | Sorted sequence cannot be determined. |
+| 存在矛盾 | Inconsistency found after X relations. |
 
 上述之 X 為透過 X 條規則後可確定。而 Y 僅出現在存在唯一順序的部份，Y 即為這唯一的順序，將該順序輸出。
 
@@ -59,9 +56,9 @@ Technique Detail
 Source Code
 -----------------
 
-<script src="https://gist.github.com/1616119.js?file=1094%20%E2%80%93%20Sorting%20It%20All%20Out.cpp"></script>
+<script src="https://gist.github.com/KuoE0/1610955.js"></script>
 
-Source Code on [gist][2]
+Source code on [gist][gist].
 
 [1]: http://poj.org/problem?id=1094 "1094 - Sorting It All Out"
-[2]: https://gist.github.com/1616119
+[gist]: https://gist.github.com/KuoE0/1616119
