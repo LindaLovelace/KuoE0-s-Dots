@@ -1,10 +1,11 @@
 <!--
 [date]: 2011-05-23
 [title]: Interview – 精靈數位科技 (Genie Capital) – Part II
-[name]: interview-genie-capital-part-II
-[tag]: interview | 面試, Genie Capital, intern | 實習
-[photo]: http://i.minus.com/jbfLoaFNecUaFz.jpeg
+[name]: interview-genie-capital-part-ii
+[tag]: interview | 面試, Genie Capital | 精靈數位科技, intern | 實習
 -->
+
+![Interview – 精靈數位科技 (Genie Capital) – Part II][feature photo]
 
 或許是上次的面試給他們不錯的印象，所以很榮幸的進入第二階段面試。今天的面試約在早上 10 點，沒啥睡到就早早起床。抱著寧可早到也不要遲到的信念（平常上課好像不是這樣？！），要在 10 點前趕達就只能搭 7:15 的高鐵 9:00 到台北了。要搭 7:15 的高鐵，就得搭 6:37 的區間車到高鐵站。要搭 6:37 的區間車，最慢就得 6:17 從宿舍出門，所以五點多就得起床整裝待發。
 
@@ -34,6 +35,5 @@
 
 [1]: http://geniecapital.com/
 [2]: http://www.truemovie.com/2009moviedata/Carriers.htm
-
-
+[feature photo]: http://i.minus.com/jD20T6e3UT1aj.jpeg
 
