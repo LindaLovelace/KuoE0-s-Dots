@@ -1,12 +1,10 @@
 <!--
 [date]: 2011-05-19
 [title]: 通識講座 - 成者能搏，網路狂潮 - 簡立峰 博士
-[name]: speech-dr-leefeng-chien
-[tag]: Google, 通識講座, web | 網路
+[name]: talk-trend-of-web-dr-leefeng-chien
+[tag]: Google, talk | 演講, web | 網路
 
 -->
-
-
 
 上禮拜得知簡立峰博士（台灣 Google No.001 員工）這禮拜三要來演講，一聽到這消息整個超興奮。馬上學校活動網頁查詢，竟然發現**餘額: 0**。當下超難過的，於是我覺得，儘管要翹課排隊也在所不惜。
 
