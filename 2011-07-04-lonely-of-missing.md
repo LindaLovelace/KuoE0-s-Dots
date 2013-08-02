@@ -1,10 +1,11 @@
 <!--
 [date]: 2011-07-04
-[title]: 因為想念，所以孤單
+[title]: 因為想念所以孤單
 [name]: lonely-of-missing
 [tag]: lonely | 孤單, intern | 實習
-[photo]: http://i.minus.com/jfbu336twJraA.png
 -->
+
+![因為想念所以孤單][feature photo]
 
 昨天下午搬到了台北，一個人的夜晚，眼淚潰堤了。
 
@@ -22,5 +23,4 @@
 
 > 其實一個人不孤單，真正孤單的是在想念。
 
-
-
+[feature photo]: http://i.minus.com/jNPqi7yBpG9gi.jpg
