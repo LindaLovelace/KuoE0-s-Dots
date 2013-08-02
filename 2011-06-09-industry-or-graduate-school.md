@@ -1,10 +1,11 @@
 <!--
 [date]: 2011-06-09
-[title]: 業界 or 研究所
-[name]: industry-or-graduate-school
-[tag]: work | 工作, graduate school | 研究所
-[photo]: http://i.minus.com/jASNDPmMbGKEg.png
+[title]: 業界與研究所的抉擇
+[name]: choice-of-industry-and-graduate-school
+[tag]: life | 人生
 -->
+
+![業界與研究所的抉擇][feature photo]
 
 
 以前我老是告訴學弟妹，要盡早規畫自己的未來，盡早找到自己想做的事情。當時的我也是個已經規劃好一切的人，但這學期發生了好多事，讓我對所有以往的決定有了新的看法，現在的我竟是個躊躇不決的人。
@@ -29,9 +30,9 @@
 
 現在也才大三，擔憂這個似乎太早，但還是有個規劃我才會比較安心，雖然也不會事事順心就是了。若沒計畫，連變化都不會察覺。
 
-（photo via [Jasmic][1]，CC License）
+(photo via [Cea.][1]，CC License)
 
-[1]: http://www.flickr.com/photos/jasmic/329844767/
-
+[1]: http://www.flickr.com/photos/centralasian/4589115885/
+[feature photo]: http://i.minus.com/jT4WtE8cnIXOa.jpg
 
 
