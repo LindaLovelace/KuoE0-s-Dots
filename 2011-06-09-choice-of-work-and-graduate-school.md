@@ -1,7 +1,7 @@
 <!--
 [date]: 2011-06-09
 [title]: 業界與研究所的抉擇
-[name]: choice-of-industry-and-graduate-school
+[name]: choice-of-work-and-graduate-school
 [tag]: life | 人生
 -->
 
