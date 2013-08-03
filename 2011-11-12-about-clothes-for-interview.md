@@ -3,8 +3,9 @@
 [title]: 關於面試服裝
 [name]: about-clothes-for-interview
 [tag]: interview | 面試, graduate school | 研究所, clothes | 服裝
-[photo]: http://i.minus.com/jO0CdYrdEHmoq.png
 -->
+
+![關於面試服裝][feature photo]
 
 最近一直有人在問我面試我要穿什麼？或是面試該穿什麼？由於下週六（11/19）就要研究所的面試了，所以大家似乎很緊張這問題。我倒是沒有思考過這問題，但有人問我也才想了一下。
 
@@ -23,9 +24,9 @@
 
 最近可能看太多[彭明輝教授的部落格][1]，都莫名的有正義感起來了XD。但也覺得自己心中其實一著存在著某些正義感吧，所以才特別喜歡美國的英雄漫畫。
 
-（photo via [Minhimalism][2]，CC License）
+（photo via [Minh Hoang][2]，CC License）
 
 [1]: http://mhperng.blogspot.com/
 [2]: http://www.flickr.com/photos/minhimalism/5647290684/
 
-
+[feature photo]: http://i.minus.com/jTWu0121TV3SY.jpg
