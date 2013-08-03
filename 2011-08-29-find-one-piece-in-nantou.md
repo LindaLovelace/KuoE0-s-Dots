@@ -1,14 +1,16 @@
 <!--
 [date]: 2011-08-29
-[title]:     去南投找尋一個大秘寶
-[name]:          find-one-piece-in-nantou
-[tag]:          九族文化村, 日月潭, One Piece
-[photo]:    http://i.minus.com/jftSnT6v9wRo1.png
+[title]: 去南投找尋一個大秘寶
+[name]: find-one-piece-in-nantou
+[tag]:  九族文化村, Sun Moon Lake | 日月潭, One Piece | 航海王
 -->
+
+![去南投找尋一個大秘寶][feature photo]
 
 本來這幾天應該是公司的員工旅遊的，但因為要考 TOEIC 還有要比 CADathlon，所以沒辦法去員工旅遊了。之後又發現九族竟然有海賊王（航海王）的主題，想說乾脆就利用非比賽考試了日子找大家一起去玩吧～！
 
-## 第一天
+第一天
+=====
 
 我們從台南出發，日月潭很遠，所以要搭六點十分的客運到台中。兩點多睡五點多起來的後果就是在車上一直睡，而且搭的是國光，國光都沒有個人影音。睡到台中再去搭有直達日月潭的仁友客運，感覺好多人要去九族。
 
@@ -28,7 +30,8 @@
 
 - - - - - - - - - -
 
-## 第二天
+第二天
+=====
 
 七點起床在飯店吃早餐，等待飯店的車接送我們到九族去。這天早上竟然是個晴空萬里的大熱天，但看氣象都說是午後雷陣雨，還是很擔心下午又開始狂風暴雨，也因此穿了個短褲，一直很後悔沒有帶拖鞋來。一抵達九族後，第一件事就是馬上去排隊拿 3D 電影的門票，真的是個大熱天有夠熱。
 
@@ -68,3 +71,4 @@
 [p5]: http://i.minus.com/jb01EsRJRHOiW5.png
 [p6]: http://i.minus.com/jbdaUvYgRXfXKi.png
 
+[feature photo]: http://i.minus.com/jftSnT6v9wRo1.png
