@@ -1,10 +1,11 @@
 <!--
 [date]: 2011-10-03
-[title]:     企業參訪 - 台積電 (tsmc)
-[name]:     company-visit-tsmc
-[tag]:     company visit | 企業參訪, tsmc | 台積電
-[photo]: http://i.minus.com/jh6aeXmPzPfXr.png
+[title]: 企業參訪 - 台積電 (tsmc)
+[name]: company-visit-tsmc
+[tag]: company visit | 企業參訪, tsmc | 台積電
 -->
+
+![企業參訪 - 台積電 (tsmc)][feature photo]
 
 上週五去台積電做企業參訪，我還忘記，前一天才想起來。害我剛預約的復健又要去取消，只好晚上再去了。據說這是成大資工的第一次以系學會的名義去企業參訪（但又有傳聞說不是，但這不是重點啦，不懂計較這幹麼＝ ＝）。
 
@@ -16,4 +17,4 @@
 
 在問完問題後，接下來是廠區參觀。先是參觀了他們的商場，再來參觀了整個台積電的南科廠還有宿舍，甚至是壘球場。但可惜的是我們單純是在廠區模型上參觀＝ ＝。整個參訪的過程大概只有三小時吧，感覺真的太短了，希望以後有機會是可以整天的～！！！！
 
-
+[feature photo]: http://i.minus.com/jh6aeXmPzPfXr.png
