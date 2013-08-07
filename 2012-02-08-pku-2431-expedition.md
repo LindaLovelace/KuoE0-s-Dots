@@ -1,32 +1,28 @@
 <!--
 [date]: 2012-02-08
-[title]:		[POJ] 2431 - Expedition
-[name]:	poj-2431-expedition
-[tag]:	POJ, priority queue | 優先佇列, greedy | 貪心
+[title]: [POJ] 2431 - Expedition
+[name]: poj-2431-expedition
+[tag]: POJ, priority queue | 優先佇列, greedy | 貪心
 -->
 
-題目網址
-----------
-[2431 - Expedition][1]
+題目網址：[2431 - Expedition][1]
 
 題目概述
 ======
 
 一群「牛」開著卡車在叢林中冒險，由於道路險峻，不小心把燃料箱給刺破了。導致每移動一單位的距離，就會漏一單位的燃料。現在他們要將卡車開往距離叢林 **L** 單位的城市修理，而現在卡車剩下 **P** 單位的燃料。在前往城市的路上會有 **N** 個燃料補給站，每個補給站可供應 **F<sub>i</sub>** 單位的燃料，而卡車的**燃料箱可以補充至無限量的燃料**。現在要求求出抵達城市的路途中，最少需要停留補給站的次數。
 
-Technique Detail
-----------------------
+**Technique Detail**
 
-
-> - 補給站數量 **N**，2 ≤ N ≤ 10,000
-> - 與城市的距離 **L**，0 ≤ L ≤ 1,000,000
-> - 現存燃料 **P**，1 ≤ P ≤ 1,000,000
-> - 補給站可補給的燃料 **F<sub>i</sub>**，1 ≤ F<sub>i</sub> ≤ 100
+- 補給站數量 **N**，2 ≤ N ≤ 10,000
+- 與城市的距離 **L**，0 ≤ L ≤ 1,000,000
+- 現存燃料 **P**，1 ≤ P ≤ 1,000,000
+- 補給站可補給的燃料 **F<sub>i</sub>**，1 ≤ F<sub>i</sub> ≤ 100
 
 輸入格式
 ----------
 
-對於每筆測試資料的第一行輸入一個整數（N），表示補給站數量。接下來有 N 行，每行兩個整數（X<sub>i</sub> F<sub>i</sub>），表示第 i 個補給站距離城市 X<sub>i</sub> 單位，且該補給站僅能提供 F<sub>i</sub> 單位的燃料。最後再一行，包含兩個整數（L P），表示城市距離叢林 L 單位，卡車目前剩下 P 單位的燃料。
+對於每筆測試資料的第一行輸入一個整數 N，表示補給站數量。接下來有 N 行，每行兩個整數 X<sub>i</sub>, F<sub>i</sub>，表示第 i 個補給站距離城市 X<sub>i</sub> 單位，且該補給站僅能提供 F<sub>i</sub> 單位的燃料。最後再一行，包含兩個整數 L, P，表示城市距離叢林 L 單位，卡車目前剩下 P 單位的燃料。
 
 輸出格式
 ----------
@@ -46,14 +42,14 @@ Technique Detail
 
 實際的作法為，將所有燃料站依照位置排序。接著開始移動卡車，並將經過的燃料站的燃料量丟入 priority queue，當無法抵達下一站時，就開始從priority queue 中取出最大值，直到燃料量足夠抵達下一站。如此重複該步驟直到抵達終點即可，若 priority queue 中的元素被取盡，仍無法前進下一站，即表示無解。
 
-> Time Complexity: O( N × log N )
+> Time Complexity: O(N × log N)
 
 Source Code
 -----------------
 
-Source Code on [gist][2]
+Source code on [gist][gist].
 
-<script src="https://gist.github.com/1789738.js?file=2431%20-%20Expedition.cpp"></script>
+<script src="https://gist.github.com/KuoE0/1789738.js"></script>
 
 [1]: http://poj.org/problem?id=2431 "Expedition"
-[2]: https://gist.github.com/1789738
+[gist]: https://gist.github.com/1789738
