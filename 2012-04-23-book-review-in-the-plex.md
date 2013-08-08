@@ -1,14 +1,13 @@
 <!--
-
 [date]: 2012-04-23
-[title]: [讀書心得] Google 總部大揭密
+[title]: [閱讀雜記] Google 總部大揭密
 [name]: book-review-in-the-plex
-[tag]: book review | 讀書心得, Google, startup | 創業
-[photo]: http://i.minus.com/jUEgvcbhKrQed.png
-
+[tag]: book review | 閱讀雜記, Google, startup | 創業
 -->
 
-**圖書資訊：[Google 總部大揭密][1]**
+![Google 總部大揭密][feature photo]
+
+圖書資訊：[Google 總部大揭密][1]
 
 到圖書館借閱的書，但四月出去泰國，加上期中考轟炸，害我無法準時看完，要被罰 15 塊錢了！
 
@@ -16,7 +15,7 @@
 
 我想我算是一個 Google Fans，但應該不致於狂熱就是了。只是很喜歡這間充滿活力的網路公司，因此，這本書我當然不會錯過。但最近覺得 Google 怪怪的，這一年來，覺得他的走向越來越奇怪。修改隱私政策、收購 motorola、google+ 的不太成功、Android 的版本過多等等事情，都令 Google 顯得沒那麼有活力了。加上越來越多 Google 員工的離職，似乎也反映出 Google 是不是真的出了什麼問題。反倒是 Facebook 越來越出鋒頭，使用者黏著在 Facebook 上的時間也越來越高。
 
-#### 題外話：
+**題外話：**
 
 > 前幾天無聊用了 Facebook 上的小程式測自己一週使用 Facebook 的時間。結果是 84 小時，這也太扯了＝ ＝。表示我每天用 Facebook 的時間，有 12 小時...。
 
@@ -36,3 +35,4 @@
 
 
 [1]: http://www.anobii.com/books/Google%E7%B8%BD%E9%83%A8%E5%A4%A7%E6%8F%AD%E5%AF%86/9789866165337/010b4228781c7f7604/
+[feature photo]: http://i.minus.com/jUEgvcbhKrQed.png
