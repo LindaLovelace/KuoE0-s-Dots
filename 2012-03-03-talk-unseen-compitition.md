@@ -1,15 +1,17 @@
 <!--
 [date]: 2012-03-03
-[title]: 通識講座 - 看不見的競爭
-[name]: speech-unseen-compitition
-[tag]: speech | 演講, startup | 創業, brand | 品牌, marketing | 行銷
-[photo]: http://i.minus.com/jz0daSk97sFny.png
+[title]: 通識講座 - 看不見的競爭 - Robert Wang
+[name]: talk-unseen-compitition
+[tag]: talk | 演講, startup | 創業, brand | 品牌, marketing | 行銷
 -->
+
+![通識講座 - 看不見的競爭][feature photo]
 
 這禮拜難得不回家，主要就是為了今天這場講座。
 
-> 題目：創造力實驗室講座 - 看不見的競爭 
-> 講者：Robert Wang 王伯馨
+**題目：創造力實驗室講座 - 看不見的競爭**
+
+**講者：Robert Wang 王伯馨**
 
 今天的講座主要談到的是品牌行銷，王老師本身待過許多大企業，今天特地與我們分享他的經驗。王老師今天的主旨就是「看不見的競爭」，要我們了解許多競爭不是在表面上，而且這些看不見得競爭往往才是競爭結果的關鍵。表面上的競爭就是所謂的「紅海策略」，而看不見的競爭則是「藍海策略」。
 
@@ -29,5 +31,4 @@
 (photo via [ξωαŋ ThΦt (slowly back…)][1], CC License)
 
 [1]: http://www.flickr.com/photos/natura_pagana/4346134064/
-
-
+[feature photo]: http://i.minus.com/jbdSFrxFWa3AoN.jpg
