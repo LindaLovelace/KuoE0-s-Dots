@@ -1,35 +1,30 @@
 <!--
 [date]: 2012-02-16
-[title]:		[POJ] 3723 - Conscription
-[name]:	poj-3723-conscription
+[title]: [POJ] 3723 - Conscription
+[name]: poj-3723-conscription
 [tag]:	POJ, MST | 最小生成樹, graph theory | 圖論
 -->
 
-題目網址
---------------
-[3723 - Conscription][1]
+題目網址：[3723 - Conscription][1]
 
 題目概述
 ======
 
-
 Windy 要建立一支軍隊，他選了 **N** 個女孩與 **M** 個男孩。每招募一個「人」就要付出 10,000 人民幣。但在這些男孩女孩中，某些男孩與女孩存在著愛戀，並有個愛戀值 **d<sub>i</sub>**。當招募的男孩與女孩有戀愛關係時，其中一個人的費用就可以降低為 10,000 - d<sub>i</sub>。現在給出這些關係，求出 Windy 最少可以用多少錢招募這些男孩與女孩。**要注意的是，每一個「人」都僅可以使用一條關係。**
 
-Technique Detail
-----------------------
+**Technique Detail**
 
-
-> - 女孩數量 **N**，1 ≤ N ≤ 10,000
-> - 男孩數量 **M**，1 ≤ M ≤ 10,000
-> - 關係數量 **R**，0 ≤ R ≤ 50,000
-> - 戀愛值 **d<sub>i</sub>**，1 < d<sub>i</sub> ≤ 10,000
+- 女孩數量 **N**，1 ≤ N ≤ 10,000
+- 男孩數量 **M**，1 ≤ M ≤ 10,000
+- 關係數量 **R**，0 ≤ R ≤ 50,000
+- 戀愛值 **d<sub>i</sub>**，1 < d<sub>i</sub> ≤ 10,000
 
 輸入格式
 ----------
 
-測試資料開頭由一個整數（K）開始，表示接下來有 K 組測試資料。
+測試資料開頭由一個整數 K 開始，表示接下來有 K 組測試資料。
 
-每一組測試資料由三個整數開始（N M R），表示 Windy 要招募 N 個女孩與 M 個男孩，且這些男孩女孩中存在著 R 對關係。接著有 R 行，每行三個整數（x<sub>i</sub> y<sub>i</sub> d<sub>i</sub>），表示女孩 x<sub>i</sub> 與男孩 y<sub>i</sub> 有存在著愛戀，且其愛戀值為 d<sub>i</sub>。
+每一組測試資料由三個整數開始 N M R，表示 Windy 要招募 N 個女孩與 M 個男孩，且這些男孩女孩中存在著 R 對關係。接著有 R 行，每行三個整數 x<sub>i</sub> y<sub>i</sub> d<sub>i</sub>，表示女孩 x<sub>i</sub> 與男孩 y<sub>i</sub> 有存在著愛戀，且其愛戀值為 d<sub>i</sub>。
 
 輸出格式
 ----------
@@ -45,16 +40,15 @@ Technique Detail
 
 所以這樣連接後，其實就是一棵樹，而這棵樹的權重和就是可以節省的費用。因此需要讓該樹的權重和越大越好，所以其實就是找出**最大生成樹**。而男孩與女孩就都看成圖上的點即可，僅需要將他們的編號重新編制，以免有重複的號碼。在套用如 Kruskal 或是 Prim 等最小生成樹的演算法即可找出最大權重和。最後 10,000 * (N + M) 減去該權重和即為答案。
 
-> Time Complexity: O( ( N + M ) × log R )
+> Time Complexity: O((N + M) × log R)
 
 Source Code
 -----------------
 
+<script src="https://gist.github.com/KuoE0/1843223.js"></script>
 
-<script src="https://gist.github.com/1843223.js?file=3723%20-%20Conscription.cpp"></script>
 
-
-Source Code on [gist][2]
+Source code on [gist][gist].
 
 [1]: http://poj.org/problem?id=3723 "Conscription"
-[2]: https://gist.github.com/1843223
+[gist]: https://gist.github.com/KuoE0/1843223
