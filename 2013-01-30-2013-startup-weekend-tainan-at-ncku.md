@@ -3,8 +3,9 @@
 [title]: 2013 Startup Weekend Tainan @成功大學
 [name]: 2013-startup-weekend-tainan-at-ncku
 [tag]: startup | 創業
-[photo]: http://i.minus.com/jE5IRtYBrgxXF.jpeg
 -->
+
+![2013 Startup Weekend Tainan @成功大學][feature photo]
 
 54 小時的 [Startup Weekend Tainan][1] 結束了，從暑假就知道這活動，猶豫了很久到底要不要參加，連個完整的專業開發經驗都沒有，覺得自己什麼都不會要去幹嘛？但隨著早鳥票的時限將近，決定還是報名了，這種限時總是很吸引人！一千塊對窮學生來說也是好貴啊！是說這天我們還自己辦了個 ACMarathon，可惜時間衝突沒辦法前往，畢竟這有繳錢啊！！
 
@@ -63,7 +64,9 @@ startup weekend 的簡報時間僅有五分鐘，五分鐘內要得到評審的�
 [6]: http://www.flickr.com/photos/expressmonorail/3960404979/
 [7]: http://www.flickr.com/photos/e06158/672489305/
 
-[p1]: http://i.minus.com/jbu3QL5wXJvBzS.jpg
-[p2]: http://i.minus.com/jXiAYKI0utQww.jpg
-[p3]: http://i.minus.com/jbqoJeu4AXyE6Q.jpeg
-[p4]: http://i.minus.com/jA7A3ljKNkiEk.jpg
+[p1]: http://i.minus.com/jLbI0Nky4fXFr.jpg
+[p2]: http://i.minus.com/jbkAtmKJeUSxIp.jpg
+[p3]: http://i.minus.com/jbd6LLZxh9wxbw.jpg
+[p4]: http://i.minus.com/j3BgIGVDQTE3D.jpg
+
+[feature photo]: http://i.minus.com/jE5IRtYBrgxXF.jpeg
