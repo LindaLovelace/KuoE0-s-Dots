@@ -2,11 +2,10 @@
 [date]: 2012-11-07
 [title]: 知識點超綱了
 [name]: teacher-does-not-teach
-[tag]: autodidacticism | 自主學習
-[photo]: http://i.minus.com/jmC7A1kW8VJE2.jpg
+[tag]: attitude | 態度, learning | 學習
 -->
 
-![知識點超綱了](http://i.minus.com/jmC7A1kW8VJE2.jpg)
+![知識點超綱了][feature photo]
 
 今天參加了師生座談會，探討了許多議題與建議。座談會接近尾聲時，主任從大一班代開始個別詢問，想聽聽各年級的心聲。其中一位同學說要替學弟妹發聲，他所提出的問題是：
 
@@ -46,7 +45,7 @@
 
 題外話：跨平台程式設計（系上的 Java 課程）也只停開一年（去年），因為剛好那年曾老師輪休。
 
-(photo via [aeter][10], CC License)
+(photo via [Tela Chhe][10], CC License)
 
 [1]: https://github.com/elitheeli/stupid-machines
 [2]: http://lmgtfy.com/?q=JAVA+%E6%95%99%E5%AD%B8
@@ -56,5 +55,7 @@
 [6]: http://werdna1222coldcodes.blogspot.tw/2011/12/java.html
 [7]: http://caterpillar.onlyfun.net/Gossip/
 [8]: http://lmgtfy.com/?q=JAVA+%E6%95%99%E5%AD%B8&l=1
-[9]: http://kuoe0.ch/1924/book-review-journey-of-electricity/
-[10]: http://www.flickr.com/photos/aeter/3745445776/
+[9]: http://blog.kuoe0.ch/posts/84366/book-review-journey-of-electricity
+[10]: http://www.flickr.com/photos/21042103@N03/3342173731/
+
+[feature photo]: http://i.minus.com/jEN6SuS1aTMHm.jpg
