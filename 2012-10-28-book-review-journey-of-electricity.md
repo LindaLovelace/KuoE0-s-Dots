@@ -2,12 +2,12 @@
 <!--
 
 [date]: 2012-10-28
-[title]: [讀書心得] 電的旅程－探索人類駕馭電子的歷史過程
+[title]: [閱讀雜記] 電的旅程－探索人類駕馭電子的歷史過程
 [name]: book-review-journey-of-electricity
-[tag]: book review | 讀書心得, physics | 物理, electromagnetism | 電磁學, technology | 科技
-[photo]: http://i.minus.com/jcWBlO7GVeCs5.jpg
-
+[tag]: book review | 閱讀雜記, physics | 物理, electromagnetism | 電磁學, technology | 科技
 -->
+
+![電的旅程－探索人類駕馭電子的歷史過程][feature photo]
 
 這是偶然間看到 [Jserv][jserv] 學長分享的書，經過上學期普物重修的洗禮之下，害我重拾對物理的興趣，物理跟數學根本就這個世界的根本，非常有趣！只有考試不有趣而已…。
 
@@ -112,3 +112,5 @@
 [p7]: http://i.minus.com/jOlDzNgydCQdn.jpg
 [p8]: http://i.minus.com/jyg73eWnPsR7N.jpg
 [p9]: http://i.minus.com/jb1XdN7RZVDCtm.jpg
+
+[feature photo]: http://i.minus.com/jcWBlO7GVeCs5.jpg
