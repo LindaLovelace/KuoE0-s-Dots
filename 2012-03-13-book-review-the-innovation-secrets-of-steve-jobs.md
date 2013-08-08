@@ -1,14 +1,15 @@
 <!--
 
 [date]: 2012-03-13
-[title]: [讀書心得] 揭密：透視賈伯斯驚奇的創新秘訣
+[title]: [閱讀雜記] 揭密：透視賈伯斯驚奇的創新秘訣
 [name]: book-review-the-innovation-secrets-of-steve-jobs
-[tag]: book review | 讀書心得, Steve Jobs | 賈伯斯, innovation | 創新
-[photo]: http://i.minus.com/jbizc4RvF4TGG1.png
+[tag]: book review | 閱讀雜記, Steve Jobs | 賈伯斯, Apple
 
 -->
 
-**圖書資訊：[揭密：透視賈伯斯驚奇的創新秘訣][1]**
+![揭密：透視賈伯斯驚奇的創新秘訣][feature photo]
+
+圖書資訊：[揭密：透視賈伯斯驚奇的創新秘訣][1]
 
 最近有點瘋狂在買書看書，但好像有點買過頭了，這本一直遲遲不敢買下去。看到學校圖書館有，想說就去借來看看再說好了。
 
@@ -77,22 +78,23 @@
 有願景，有夢想，不懂的傳遞，那也是白搭。許多公司常常喜歡強調技術，講許多大眾聽不懂的話來顯現產品的強大。但其實，當大眾聽不懂時，或許真的覺得很厲害，但同時可能也覺得自己不需要這麼強大的東西。用簡單的語言，生動的描述，當大眾都聽的懂時，他們才會真正去思考自己的需求。
 
 
-(photo via [Stian Eikeland][2],  [hig 37][3], [Rebecca-Lee][4], [h.koppdelaney][5], [melolou][6], [JournalDesVitrines.com][7], [Lawrence OP][8], CC License)
+(photo via [Stian Eikeland][2],  [hig 37][3], [Sudhamshu Hebbar][4], [h.koppdelaney][5], [melolou][6], [JournalDesVitrines.com][7], [Lawrence OP][8], CC License)
 
 [1]: http://www.anobii.com/books/%E6%8F%AD%E5%AF%86/9789861577623/012bb326c49991e84c/
 [2]: http://www.flickr.com/photos/stianeikeland/3696386615/
 [3]: http://www.flickr.com/photos/hig_37/6563238909/
-[4]: http://www.flickr.com/photos/lorelei-ranveig/2294885420/
+[4]: http://www.flickr.com/photos/sudhamshu/2781151983/
 [5]: http://www.flickr.com/photos/h-k-d/3920542020/
 [6]: http://www.flickr.com/photos/melolou/2794174215/
 [7]: http://www.flickr.com/photos/journaldesvitrines/5974390313/
 [8]: http://www.flickr.com/photos/paullew/2184637971/
 
-[p1]: http://i.minus.com/jbuE4AV6esd7mR.png
-[p2]: http://i.minus.com/j2vp4rZUyDOtT.png
-[p3]: http://i.minus.com/jboLQrwqA8wYdz.png
-[p4]: http://i.minus.com/jx4zz4hTZhkBd.png
-[p5]: http://i.minus.com/jWrjA2BcZ5fho.png
-[p6]: http://i.minus.com/jbirHjEpdbCAIL.png
-[p7]: http://i.minus.com/jbl05iqbGXlBhc.png
+[p1]: http://i.minus.com/jil6YldsyQJW0.jpg
+[p2]: http://i.minus.com/jG4DuadMCefpa.jpg
+[p3]: http://i.minus.com/jd05dO3HBuoZn.jpg
+[p4]: http://i.minus.com/jWoQKzM3F01PL.jpg
+[p5]: http://i.minus.com/jQ5WNz8hlZPF3.jpg
+[p6]: http://i.minus.com/jbyD5lyAM4d5wz.jpg
+[p7]: http://i.minus.com/jbjfIZZceFFOFw.jpg
 
+[feature photo]: http://i.minus.com/jbizc4RvF4TGG1.png
