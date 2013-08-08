@@ -148,7 +148,7 @@ Day 5
 [1]: http://www.happypanda.com.tw/
 [2]: http://www.uukt.idv.tw/_tw/member/01_detail.php?kd=323
 [wiki]: http://zh.wikipedia.org/wiki/%E8%90%BD%E5%B1%B1%E9%A2%A8
-[part2]: http://kuoe0.ch/1771/travel-around-the-formosa-taiwan-part-2/
+[part2]: http://blog.kuoe0.ch/posts/84356/travel-around-the-formosa-taiwan-part-2
 
 [p01]: http://i.minus.com/jyzkDojItdBWI.jpg
 [p02]: http://i.minus.com/jbd3pxfPfugr9P.jpg
