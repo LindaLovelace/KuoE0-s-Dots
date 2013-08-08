@@ -161,6 +161,7 @@ Problem I
 聽台大的說是 binary search 的題目，也聽到有 ternary search 的作法。
 
 [1]: http://app.atmovies.com.tw/movie/movie.cfm?action=filmdata&film_id=fren41245526&channelid=CH56
-[feature photo]: http://i.minus.com/jAyrjFpFVTkot.png
+
+[feature photo]: http://i.minus.com/jbeNm5bAaPOLt0.png
 
 
