@@ -1,7 +1,7 @@
 <!--
 [date]: 2012-09-25
 [titel]: 解決 pycurl 造成的 gnutls_handshake() failed 錯誤
-[title]: solve-the-error-gnutls-handshake-failed-caused-by-pycurl
+[title]: resolve-the-error-gnutls-handshake-failed-caused-by-pycurl
 [tag]: Ubuntu, Linux, LinuxMint, GnuTLS, OpenSSL
 -->
 
