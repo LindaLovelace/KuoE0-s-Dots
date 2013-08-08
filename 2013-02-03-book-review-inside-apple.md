@@ -2,9 +2,10 @@
 [date]: 2013-02-03
 [title]: [閱讀雜記] 蘋果內幕：後賈伯斯時代，蘋果還能紅多久？
 [name]: book-review-inside-apple
-[tag]:  book review | 讀書心得, Apple, Steve Jobs | 賈伯斯
-[photo]: http://i.minus.com/jqaVZ5HRlUvQM.jpeg
+[tag]:  book review | 閱讀雜記, Apple, Steve Jobs | 賈伯斯
 -->
+
+![蘋果內幕：後賈伯斯時代，蘋果還能紅多久？][feature photo]
 
 圖書資訊：[蘋果內幕][1]
 
@@ -21,3 +22,4 @@
 最後，Apple 現在還有一位靈魂人物可以依靠－**Jonathan Ive**。身為首席工業設計師的 Ive，所有你我手上的 Apple 產品都經過他手。在書中看到他為了了解金屬的特性，特別到了日本去觀看武士刀的製作流程。但我上網查了一下，發現這似乎只是個流言。但流言會被傳頌，一定有他的理由，一定有令人相信的原因。這就在於 Ive 是個對產品細節非常講究的人，只要 Ive 還在，Apple 的產品的精緻與質感都不會降低，Apple 的產品仍然會是科技產品中的精品，在這樣的情況下，我相信 Apple 就能繼續存活繼續吸引消費者。
 
 [1]: http://www.anobii.com/books/%E8%98%8B%E6%9E%9C%E5%85%A7%E5%B9%95/9789862133507/01493b07d0488b1421/
+[feature photo]: http://i.minus.com/jqaVZ5HRlUvQM.jpeg
