@@ -3,8 +3,9 @@
 [title]: ACM-ICPC 與我的邂逅
 [name]: acm-icpc-and-me
 [tag]: ACM-ICPC
-[photo]: http://i.minus.com/jbeNm5bAaPOLt0.png
 -->
+
+![ACM-ICPC 與我的邂逅][feature photo]
 
 轉眼間，已經參加了三屆的 ACM-ICPC。雖然每次都去被電爆，但來到這種大場合，心中總會湧起一股莫名的澎湃，總會想要變強。可惜這次還是比很爛，比去年更爛了哈哈。ACM-ICPC 這比賽就這幾年的經驗下來，其實想取得好成績的秘訣只有一個－**練習題目**。持續的練習，實力絕對會持續的進步，但速度不快；但不持續的練習，實力絕對會持續的退步，且速度非常快。不過，練習的題目質量一定要夠高！
 
@@ -45,3 +46,5 @@ ACM-ICPC 每次都會有選手必須穿著的衣服，另外 Google Code Jam 在
 附個兩個月前的招生投影片：
 
 <script async class="speakerdeck-embed" data-id="e904bf505b6e013047bd1231381b2567" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+
+[feature photo]: http://i.minus.com/jbeNm5bAaPOLt0.png
