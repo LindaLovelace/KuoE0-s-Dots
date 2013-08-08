@@ -3,14 +3,13 @@
 [titel]: 防止 apt-get upgrade 升級特定套件
 [title]: prevent-apt-get-upgrade-to-upgrade-specific-packages
 [tag]: Ubuntu, Linux
-[photo]: none
 -->
 
 APT 是 Debian 下的套件管理器，Ubuntu 衍生自 Debian，因此自然而然的也繼承了 APT 這個套件管理器。APT 可以幫助我們下載、安裝或升級套件等等，這些就不在此討論了。
 
 在 Ubuntu 中，當我們要更新所有套件時，我們會下 `apt-get upgrade` 的指令。但有時候某些套件我們會有自己的編譯需求或是不想更新至新版本，例如下不同參數、更改些內容或是正值開發中套件不能隨意更新等等。此時該套件如果有在 APT 的套件庫中，每當下達更新的指令時，就會造成我們自行編譯或是不願更新的套件被套件庫中的最新版本覆蓋。因此我們就需要告訴 APT 哪些套件不要更新。
 
-## 方法一
+**方法一**
 
 利用 aptitude，輸入指令 `aptitude` 可進入 aptitude 的 UI，`ctrl+T` 可操作選單，並使用搜尋功能找出要保留的套件名稱。
 
@@ -20,15 +19,18 @@ APT 是 Debian 下的套件管理器，Ubuntu 衍生自 Debian，因此自然而
 
 另外，也可使用 dselect 使用類似的方法！
 
-## 方法二
+**方法二**
 
 首先輸入 `dpkg --get-selections > packages`，該指令會將當前套件庫的設定資訊匯出至 packages 這個文字檔中。
 
 接下來在以編輯器打開 packages 進行編輯。將會看到如類似下面的資訊：
 
-	package1 install
-	package2 install
-	…
+```
+package1 install
+package2 install
+…
+packageN install
+```
 	
 找到不希望被更新的套件名稱，並將該套件庫後面所接著的 **install** 替換成 **hold** 並存檔離開。
 
