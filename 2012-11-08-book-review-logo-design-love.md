@@ -2,9 +2,10 @@
 [date]: 2012-11-08
 [title]: [閱讀雜記] 好 LOGO，如何好？
 [name]: book-review-logo-design-love
-[tag]:  book review | 讀書心得, design | 設計, logo | 標誌
-[photo]: http://i.minus.com/jbl1IltbAWw52Q.jpeg
+[tag]:  book review | 閱讀雜記, design | 設計, logo | 標誌
 -->
+
+![好 LOGO，如何好？][feature photo]
 
 其實一直很想幫自己的 blog 弄個 logo 出來，但沒有美術天份，也非相關科系的我，實在無從下手，看到這本書的書評不錯，就到圖書館借來看看了。
 
@@ -156,3 +157,5 @@ Ford 了解更快不是讓馬跑的更快而已，而是創造出另一種完完
 [1]: http://en.wikipedia.org/wiki/Alan_Turing
 [2]: http://jas9.blogspot.com/2009/03/tropicana.html
 [3]: http://adage.com/article/adages/coke-marketing-s-biggest-blunders-turns-25/143470/
+
+[feature photo]: http://i.minus.com/jbl1IltbAWw52Q.jpeg
