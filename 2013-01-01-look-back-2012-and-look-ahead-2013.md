@@ -2,9 +2,10 @@
 [date]: 2013-01-01
 [title]: 回顧 2012 與展望 2013
 [name]: look-back-2012-and-look-ahead-2013
-[tag]: 
-[photo]: http://i.minus.com/jwqkLcubyInDd.jpeg
+[tag]: life | 人生
 -->
+
+![回顧 2012 與展望 2013][feature photo]
 
 回顧 2012
 =========
@@ -163,3 +164,5 @@ ACM-ICPC
 [p11]: http://i.minus.com/jbTFTzQ8JAlUo.jpeg
 [p12]: http://i.minus.com/jgYmfh3bAxJ9Y.jpeg
 [p13]: http://i.minus.com/jGaamchu2ooFd.jpeg
+
+[feature photo]: http://i.minus.com/jwqkLcubyInDd.jpeg
