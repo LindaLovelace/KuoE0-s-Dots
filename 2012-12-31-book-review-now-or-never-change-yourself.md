@@ -2,9 +2,10 @@
 [date]: 2012-12-31
 [title]: [閱讀雜記] 有些事現在不做，一輩子都不會做了－改變自我的勇氣
 [name]: book-review-now-or-never-change-yourself
-[tag]:  book review | 讀書心得, life | 生活, time | 時間, courage | 勇氣
-[photo]: http://i.minus.com/jbn5cIBCrTDb0M.jpeg
+[tag]: book review | 閱讀雜記, life | 人生, courage | 勇氣
 -->
+
+![有些事現在不做，一輩子都不會做了－改變自我的勇氣][feature photo]
 
 在大四下學期曾說過這個暑假一定要去環島，一直到了暑假開始進入實驗室，卻仍遲遲未下決定。偶然間在 Facebook 上看到名為「[有些事現在不做 一輩子都不會做了][1]」的 Youtube 影片，立馬決定要去環島！
 
@@ -55,5 +56,6 @@
 [3]: http://www.flickr.com/photos/geishaboy500/3090381047/
 [4]: http://www.flickr.com/photos/calleephoto/5040199394/
 
-[p1]: http://i.minus.com/jbcVGRGNjVBVCr.jpeg
-[p2]: http://i.minus.com/jQwfzHQMwjQXi.jpeg
+[p1]: http://i.minus.com/jdJtlPax8KtqE.jpg
+[p2]: http://i.minus.com/j8AhA5UJN0q8t.jpg
+[feature photo]: http://i.minus.com/jbn5cIBCrTDb0M.jpeg
