@@ -2,9 +2,10 @@
 [date]: 2013-02-22
 [title]: [ACM-ICPC] 淺談 I/O
 [name]: acm-icpc-about-io
-[tag]: ACM-ICPC, IO
-[photo]: http://i.minus.com/jb00PwB3HTZNir.jpg
+[tag]: ACM-ICPC, I/O | 輸入輸出
 -->
+
+![淺談 I/O][feature photo]
 
 Standard I/O
 -------
@@ -15,28 +16,33 @@ Standard I/O
 
 假設現在有個程式叫做 add，其內容為簡單的加法，給予兩個整數作為 input，並將相加的結果作為 output 輸出。
 
-	$ ./add
-	1 2
-	3
-	3 4
-	7
+```terminal
+$ ./add
+1 2
+3
+3 4
+7
+```
 
 一般我們看到的執行過程大概長這樣，看起來 input 跟 output 好像放在一起。所以，當題目的敘述為這樣：
 
 	Sample Input
 	1 2
 	3 4
+	
 	Sample Output
 	3
 	7
 
 可能誤會成程式的執行過程應該要長這樣：
 
-	$ ./add
-	1 2
-	3 4
-	3
-	7
+```terminal
+$ ./add
+1 2
+3 4
+3
+7
+```
 	
 但其實輸入與輸出是兩個不同的東西，雖然在螢幕上看好像混在一起，但實際上是分開的。就把它想像成兩個不同的檔案，一個叫做 input，程式會從裡面讀取資料，而另一個叫做 output，程式會將結果都寫在該檔案中。雖然說是想像，不過實際上也是這個樣子。
 
@@ -44,11 +50,13 @@ Standard I/O
 
 既然知道了輸入與輸出是分開的後，在寫程式時也不需要那麼辛苦的把所有輸出都存起來，最後再一次輸出至螢幕了。執行過程長這樣根本就是合法的：
 
-	$ ./add
-	1 2
-	3
-	3 4
-	7
+```terminal
+$ ./add
+1 2
+3
+3 4
+7
+```
 
 
 File I/O
@@ -58,43 +66,54 @@ File I/O
 
 先來看看使用 C 的 fopen 的方法：
 
-	FILE *in = fopen(“inputfile”);
-	FILE *out =fopen(“outputfile”);
+
+```c
+FILE *in = fopen(“inputfile”);
+FILE *out =fopen(“outputfile”);
 	
-	fscanf(in, ...);
-	fprintf(out, ...);
-	
-	fclose(in);
-	fclose(out);
+fscanf(in, ...);
+fprintf(out, ...);
+
+fclose(in);
+fclose(out);
+```
 
 再來看看使用 C++ 的 fstream 的方法：
 
-	ifstream in = ifstream(“inputfile”);
-	ofstream out = ofstream(“outputfile”);
-	
-	in >> x;
-	out << x;
-	
-	in.close();
-	out.close();
+```c++
+ifstream in = ifstream(“inputfile”);
+ofstream out = ofstream(“outputfile”);
+
+in >> x;
+out << x;
+
+in.close();
+out.close();
+```
 
 其實好像跟原本差不多，不過就是多了開檔與關檔的動作！如果用的是 C 的 fopen 的話，那所有的 I/O 動作就要多打個 f，還要加上該檔案的檔案指標變數於參數中。如果使用 C++ 的 fstream，就真的只多開檔關檔，其他都一樣！但是，還有沒有更方便的方法呢？
 
 答案就是 `freopen`，以下是其 pototype。
 
-	FILE * freopen ( const char * filename, const char * mode, FILE * stream );
+```c
+FILE * freopen ( const char * filename, const char * mode, FILE * stream );
+```
 	
 使用方法很簡單，第一個參數填上要開啓的檔案名稱，第二個參數則是開啓的方式（例如：r 表示讀，w 表示寫），而第三個則是要將該檔案的內容重新導入哪一個檔案串流中。
 
 因此只要利用以下這行，就可以將 input.txt 重新導入到標準輸入中，別忘了前面提到的，標準輸入的變數就是 `stdin`。
 
-	freopen( "input.txt", "r", stdin );
+```c
+freopen( "input.txt", "r", stdin );
+```
 
 在程式最前面加上這行，所有檔案的內容都將可以透過 scanf、gets、getchar 等標準輸入的 function 來取得！
 
 如果題目有要求要寫檔的話，只要將開啓模式改為寫入的模式（w），並將標準輸入的變數改為標準輸出的變數（`stdout`）即可，如下：
 
-	freopen( "output.txt", "w", stdout );
+```c
+freopen( "output.txt", "w", stdout );
+```
 	
 命令提示下的 I/O 導向
 ----
@@ -112,15 +131,20 @@ File I/O
 	
 只要 `<` 符號，即可將 input.txt 作為 add 的標準輸入了，來看看執行過程：
 
-	$ ./add < input.txt
-	3
-	7
+```terminal
+$ ./add < input.txt
+3
+7
+```
 
 現在我們想要將輸出導向 output.txt 這個檔案中，只要將 `<` 改成 `>` 就可以了，執行過程如下：
 
-	$ ./add > output.txt
-	1 2
-	3 4
+
+```terminal
+$ ./add > output.txt
+1 2
+3 4
+```
 	
 接著我們打開 output.txt 就可以發現裡面的內容為：
 
@@ -129,7 +153,10 @@ File I/O
 	
 兩個也可以同時使用：
 
-	$ ./add < input.txt > output.txt
+
+```terminal
+$ ./add < input.txt > output.txt
+```
 	
 如此一來，打開 output.txt 就可以看到跟剛剛一樣的內容了！這是個非常實用的操作，而且非常簡單！其實也不用死背要用大於還小於，就把它當成箭頭來看，你想要資料從哪裡往哪裡跑！想從 a 到 b，那麼就把箭頭指向 b，反之亦然。另外，這個操作並不限於 Un*x 系統，在 Winodws 上也可以這樣操作！
 
@@ -142,29 +169,38 @@ ACM-ICPC 的題目絕大部份都是一次的測試中，會有非常多比測�
 
 **`scanf`**
 
-	while (scanf() != EOF) {		// do something	}
+
+```c++
+while (scanf() != EOF) {    // do something}```
 **`fgets`**
-	while (fgets() != NULL) {		// do something	}
+
+```c++while (fgets() != NULL) {    // do something}```
 
 **`cin`**
 
-	while (cin >> x) {		// do something	}
+
+```c++
+while (cin >> x) {    // do something}```
 
 從程式碼應該很好理解，基本上就是 `scanf` 讀到 EOF 時，就會回傳 `EOF` 這個值回來（`EOF` 是一個 Macro）。而 `fgets` 的話，在讀到 EOF 時，因為讀不到東西了，即回傳 `NULL` 回來。最後是 `cin`，`cin` 的回傳值為 `istream` 類型，遇上真假值判斷時，會依照物件狀態決定回傳的真假值。所以，當 `cin` 讀到 EOF 時，`cin` 內部會有 EOF 的狀態，此時 `istream` 在回傳時就會傳回 `false`。
 
 此外，`EOF` 其直通常是 `-1`，所以有時候可能會看到有以下的寫法：
 
-	while ( ~scanf() ) {
-		// do something
-	}
+```c++
+while (~scanf()) {
+    // do something
+}
+```
 
 由於 `EOF` 其值為 `-1`，而 `-1` 用位元表示為 `111…111`。因此透過 not 位元運算（`~`），則會變成 `000…000`，其值也等於 `0`，在大部份環境中，`0` 也代表著 `false`！所以可以利用這樣簡短的寫法來實現讀到 EOF 停止！
 
 如果題目有指定終止條件的話，也可以將該條件寫在 `while` 迴圈內。以前面的相加程式為例，假設規定當輸入的兩個整數都為 0 時終止程式，就可以利用以下的寫法：
 
-	while ( ~scanf( "%d %d", &a, &b ) && ( a || b ) ) {
-		// do something
-	}
+```c++
+while (~scanf("%d %d", &a, &b) && (a || b)) {
+    // do something
+}
+```
 
 題目通常還有一種，就是會在開頭就告訴我們接下來會有幾筆測試資料，例如以下這個 input.txt 檔案，一開始就告訴我們測試資料會有 2 筆：
 
@@ -174,20 +210,25 @@ ACM-ICPC 的題目絕大部份都是一次的測試中，會有非常多比測�
 
 面對這樣的測試資料，可以採用以下兩種寫法，且適用於不同情況。若題目的輸出，有包含當前測試資料的編號，則採用以下這種：
 
-	int test;
-	scanf( "%d", &test );
-	for ( int t = 0; t < test; ++t ) {
-		// do something
-		printf( "#%d …", t );
-	}
+```c++
+int test;
+scanf("%d", &test);
+for (int t = 0; t < test; ++t) {
+    // do something
+    printf("#%d …", t);
+}
+```
 
 若題目沒要求輸出測資編號，我個人比較推薦以下這種，寫起來較省時，在比賽中時間很珍貴的：
 
-	int t;
-	scanf( "%d", &t );
-	whilet ( t-- ) {
-		// do something
-	}
+```c++
+int t;
+scanf("%d", &t);
+while (t--) {
+    // do something
+}
+```
+
 
 
 讀取一行
@@ -203,10 +244,12 @@ ACM-ICPC 的題目絕大部份都是一次的測試中，會有非常多比測�
 
 **`gets`**
 
-	char buf[ 100 ];
-	while ( gets( buf ) ) {
-		// do something
-	}
+```c++
+char buf[100];
+while (gets(buf)) {
+    // do something
+}
+```
 
 `gets` 會讀取一整行直到讀到換行字元（`\n`）或是檔案結尾（EOF）。要注意的是，`gets` 讀出來的結果，並**不會包括換行字元（`\n`）**，也就是說在輸入緩衝區中仍保有換行字元！
 
@@ -214,10 +257,12 @@ ACM-ICPC 的題目絕大部份都是一次的測試中，會有非常多比測�
 
 **`fgets`**
 
-	char buf[ 100 ];
-	while ( fgets( buf, sizeof( buf ), stdin ) ) {
-		// do something
-	}
+```c++
+char buf[100];
+while (fgets(buf, sizeof(buf), stdin)) {
+    // do something
+}
+```
 
 `fgets` 與 `gets` 不同的是，`fgets` 會檢查長度，最多只會讀取（第二個參數的值 - 1）這麼大的資料。因此不會因為資料過多而造成記憶體錯誤，這也是 `gets` 危險的地方。另外跟 `gets` 一樣，讀取到換行字元（`\n`）或檔案結尾（EOF）後停止。但要注意，`fgets` 若是因為讀到換行而停止的話，讀取出來的結果**會包含換行字元（`\n`）**，在處理字串時一定要特別注意！不過也因此不需要像 `gets` 一樣，還要將緩衝區內的換行字元讀出來。
 
@@ -225,15 +270,19 @@ ACM-ICPC 的題目絕大部份都是一次的測試中，會有非常多比測�
 
 **`cin.getline`**
 
-	char buf[ 100 ];
-	cin.getline( buf, sizeof( buf ), '\n' );
+```c++
+char buf[100];
+cin.getline(buf, sizeof( buf ), '\n');
+```
 
 `cin.getline` 要傳入一個 C-style 的字串，另外要指定長度。而最後一個參數則非必要，該參數用來指定停止的字元，也就是讀到該字元的話，將停止輸入。當最後一個參數未指定時，則預設採用換行字元（`\n`）。
 
 **`getline`**
 
-	string buf;
-	getline( cin, str, '\n' );
+```c++
+string buf;
+getline(cin, str, '\n');
+```
 	
 `getline` 與 `cin.getline` 是不一樣的，我個人認為這個比較好用。第一個參數為 input 來源，若使用標準輸入的話，則填入 `cin`。第二個參數則需傳入一個 STL 的 string 物件，用來儲存讀取到的內容。第三個參數如同 `cin.getline` 的一樣，也是非必用的參數，用來指定停止的字元，未指定則預設為換行字元（`\n`）。
 
@@ -253,7 +302,9 @@ I/O 效率
 
 因此，當我們要寫的程式中「僅」會使用到 cin/cout，完全不會使用到 C 的 I/O 時，我們可以在程式碼中加入以下這行：
 
-	std::ios::sync_with_stdio( false );
+```c++
+std::ios::sync_with_stdio(false);
+```
 	
 加入這行後，我們再來看看 C++ 的 stream I/O 的效能：
 
@@ -271,14 +322,17 @@ Buffered Technique
 
 首先先來講讀取資料的部分，我是把它稱作 「**buffered read**」，若有更好的名詞也麻煩推薦給我一下！這邊在讀取時主要是利用 `fgets` 這個 function，利用 `fgets` 即可一次讀取較大的資料進來。由於讀取的資料是一個較大的區塊，對於其內容並沒有進行過處理，所以接下來的步驟就是進行資料的 parsing。一個最簡單的方式就是利用 `sscanf`，如同 `scanf` 的使用方式，差別在於它的資料來源是「**字串**」。因此我們就可以從剛剛用 `fgets` 讀到的字串中的不同資料給分隔出來，以下是讀取兩個數字的範例：
 
-	char buf[ 1000 ];	int a, b;	fgets( buf, sizeof( buf ), stdin ); 	sscanf( buf, “%d %d”, &a, &b );
-	// do something
+```c++
+char buf[1000];int a, b;fgets(buf, sizeof(buf), stdin);sscanf(buf, “%d %d”, &a, &b);
+// do something
+```
 
 要注意的是，輸入測試資料時，該兩個數字需要放置在同一行，不可隔行！
 
 接下來是資料寫入的部分，也就是「**buffered write**」。這次利用 `puts` 這個 function，這是一個可以直接將字串輸出的函式。做法就是先將要輸出的資料放置於字串內，這邊可以利用 `sprintf`，一樣是個與 `printf` 相似的 function，只不過對向改成「字串」而已。當字串完成後，在利用 `puts` 進行輸出，即可有效減少許多 I/O 的次數了！以下是輸出一個整數的範例：
 
-	char buf[ 1000 ];	int ret = 10;	sprintf( buf, “%d”, ret );	puts( buf );
+```c++
+char buf[1000];int ret = 10;sprintf(buf, “%d”, ret);puts(buf);```
 
 接下來來看效能比較表：
 
@@ -293,7 +347,7 @@ Buffered Technique
 
 2013/4/6:
 
-手殘將 while ( ~scanf( "%d %d", &a, &b ) && ( a || b ) ) 打為 while ( ~scanf( "%d %d", &a, &b ) && a && b )，使得條件變為任意數值為零則跳出 while 迴圈。
+手殘將 `while (~scanf("%d %d", &a, &b) && (a || b)) `打為 `while (~scanf("%d %d", &a, &b) && a && b)`，使得條件變為任意數值為零則跳出 while 迴圈。
 
 [p1]: http://i.minus.com/jbsxVS5BFfQy6C.jpg
 [p2]: http://i.minus.com/jbqCggnOujEESq.jpg
@@ -302,3 +356,4 @@ Buffered Technique
 [p5]: http://i.minus.com/jbvTjERMb47rak.jpg
 [p6]: http://i.minus.com/j1iYZv73gyEfq.jpg
 
+[feature photo]: http://i.minus.com/jb00PwB3HTZNir.jpg
