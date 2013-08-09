@@ -1,5 +1,5 @@
 <!--
-[date]: 2013-04-14-2
+[date]: 2013-04-14
 [title]: [GCJ 2013] Qualification Round - B - Lawnmower
 [name]: gcj-2013-qualification-round-b-lawnmower
 [tag]: Google Code Jam
@@ -14,17 +14,17 @@
 
 **Technique Detail**
 
-1 ≤ T ≤ 100
+- 1 ≤ T ≤ 100
 
-small case
+small case:
 
-> 1 ≤ N, M ≤ 10  
-> 1 ≤ a<sub>i,j</sub> ≤ 2
+- 1 ≤ N, M ≤ 10
+- 1 ≤ a<sub>i,j</sub> ≤ 2
 
-large case
+large case:
 
-> 1 ≤ N, M ≤ 100  
-> 1 ≤ a<sub>i,j</sub> ≤ 100
+- 1 ≤ N, M ≤ 100  
+- 1 ≤ a<sub>i,j</sub> ≤ 100
 
 **輸入格式**
 
@@ -48,14 +48,14 @@ large case
 
 最後在針對每一格去做檢查，檢查每一格是否都是當前列與當前行所設定的高度之最小值，若出現不符合條件者，則表示該樣式不可能達到。
 
-> Time Complexity: O( N × M )
+> Time Complexity: O(N × M)
 
 Source Code
 ----------------
 
 <script src="https://gist.github.com/KuoE0/5381892.js"></script>
 
-給喜歡亂擋 javascript 的人：[source code link][code]
+Source code on [gist][gist].
 
 [1]: https://code.google.com/codejam/contest/2270488/dashboard#s=p1
-[code]: https://gist.github.com/5381892
+[gist]: https://gist.github.com/5381892
