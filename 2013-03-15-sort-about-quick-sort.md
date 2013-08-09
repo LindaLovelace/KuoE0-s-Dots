@@ -3,8 +3,9 @@
 [title]: [Sort] 淺談 quick sort
 [name]: sort-about-quick-sort
 [tag]: ACM-ICPC, sort | 排序, algorithm | 演算法
-[photo]:
 -->
+
+![淺談 quick sort][feature photo]
 
 中譯「快速排序法」，該排序演算法是普遍被認為最快的排序演算法，與 [merge sort][1] 一樣，都採用 divide & conquer 的策略。不過在切割的部分與 merge sort 不同的是，merge sort 每次切割都是剖半，而 quick sort 則與該次切割時所選的 pivot 有關。
 
@@ -64,63 +65,67 @@ pseudo code
 -----------------
 
 **Traditional Quick Sort**
+
+```pseudo
+// A is the sequence
+function quick_sort( A ):
+    if length( A ) is empty
+         return
+    // choose pivot
+    pivot = A[ 0 ]
+    // divide
+        for i in [ 1, n )
+            if A[ i ] >= pivot
+                gt.append( A[ i ] )
+            else
+                lt.append( A[ i ] )
+    // sort sub-sequence
+    quick_sort( lt )
+    quick_sort( gt )
+    // merge
+    clear A to empty
+    A.append( lt )
+    A.append( pivot )
+    A.append( gt )
     
-     // A is the sequence
-     function quick_sort( A ):
-          if length( A ) is empty
-               return
-          // choose pivot
-          pivot = A[ 0 ]
-          // divide
-          for i in [ 1, n )
-               if A[ i ] >= pivot
-                    gt.append( A[ i ] )
-               else
-                    lt.append( A[ i ] )
-          // sort sub-sequence
-          quick_sort( lt )
-          quick_sort( gt )
-          // merge
-          clear A to empty
-          A.append( lt )
-          A.append( pivot )
-          A.append( gt )
-         
-          return
-         
+    return
+```
+
 **in-place version**
 
-     // A is the sequence
-     // L is the close interval of left boundary
-     // R is the open interval of right boundary
-     function quick_sort( A, L, R ):
-          if ( L == R )
-               return
-          // choose pivot
-          pivot = A[ R - 1 ]
-          pos = L
-          // divde
-          for i in [L, R - 1)
-               if pivot >= A[ i ]
-                    swap A[ i ] and A[ pos ]
-                    pos = pos + 1
-          // orgazine order
-          swap A[ pos ] and A[ R - 1 ]
-          // sort sub-sequence
-          quick_sort( L, pos )
-          quick_sort( pos + 1, R )
-          return
-         
+```pseudo
+// A is the sequence
+// L is the close interval of left boundary
+// R is the open interval of right boundary
+function quick_sort( A, L, R ):
+    if ( L == R )
+        return
+    // choose pivot
+    pivot = A[ R - 1 ]
+    pos = L
+    // divde
+    for i in [L, R - 1)
+        if pivot >= A[ i ]
+            swap A[ i ] and A[ pos ]
+            pos = pos + 1
+    // orgazine order
+    swap A[ pos ] and A[ R - 1 ]
+    // sort sub-sequence
+    quick_sort( L, pos )
+    quick_sort( pos + 1, R )
+    return
+```
+   
 Source Code
 ----------------
 
 <script src="https://gist.github.com/KuoE0/5163266.js?file=quickSort.cpp"></script>
 
-quickSort.cpp source code on [Gist][2]
+Source code on [gist][gist].
 
 <script src="https://gist.github.com/KuoE0/5163266.js?file=quickSort-in-place.cpp"></script>
 
-quickSort-in-place.cpp source code on [Gist][3]
+Source code on [gist][gist]
 
 效能比較
 ----------
@@ -129,14 +134,14 @@ quickSort-in-place.cpp source code on [Gist][3]
 
 ![compare][p1]
 
-資料數量 | merge sort | quick sort | balence ver. | in-place ver. | random ver.
----|---|---|---|---|---
-100 | 0.01 | 0.03 | 0.03 | 0.01 | 0.03
-1000 | 0.60 | 0.33 | 0.26 | 0.07 | 0.33
-10000 | 2.06 | 3.45 | 2.79 | 0.79 | 3.48
-100 # | 0.02 | 0.06 | 0.02 | 0.01 | 0.03
-1000 # | 0.17 | 1.03 | 0.23 | 0.33 | 0.32
-10000 # | 1.84 | 14.85 | 2.39 | 4.09 | 3.40
+| 資料數量 | merge sort | quick sort | balence ver. | in-place ver. | random ver. |
+| ---|---|---|---|---|--- |
+| 100 | 0.01 | 0.03 | 0.03 | 0.01 | 0.03 |
+| 1000 | 0.60 | 0.33 | 0.26 | 0.07 | 0.33 |
+| 10000 | 2.06 | 3.45 | 2.79 | 0.79 | 3.48 |
+| 100 # | 0.02 | 0.06 | 0.02 | 0.01 | 0.03 |
+| 1000 # | 0.17 | 1.03 | 0.23 | 0.33 | 0.32 |
+| 10000 # | 1.84 | 14.85 | 2.39 | 4.09 | 3.40 |
 
 以上測試資料皆為 100 組，單位為秒 (second)。# 標記的資料表示已接近排序好的數列。
 
@@ -154,20 +159,22 @@ quickSort-in-place.cpp source code on [Gist][3]
 
 <script async class="speakerdeck-embed" data-id="c1f2aa906ef80130f47e22000a95002c" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 
-Slide on [Speaker Deck][4]
+Slide on [Speaker Deck][2]
 
-[Wikipedia][5] 上的示意動畫：
+[Wikipedia][3] 上的示意動畫：
 
 ![quick sort][p2]
 
 (photo via [guillermomadrid][4], CC License)
 
-[1]: http://kuoe0.ch/2166/sort-about-merge-sort/
-[2]: https://gist.github.com/KuoE0/5163266#file-quicksort-cpp
-[3]: https://gist.github.com/KuoE0/5163266#file-quicksort-in-place-cpp
-[4]: https://speakerdeck.com/kuoe0/quick-sort
-[5]: http://zh.wikipedia.org/zh-tw/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F
-[6]: http://www.flickr.com/photos/guille/81452528/
+[1]: http://blog.kuoe0.ch/posts/84428/sort-about-merge-sort
+[2]: https://speakerdeck.com/kuoe0/quick-sort
+[3]: http://zh.wikipedia.org/zh-tw/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F
+[4]: http://www.flickr.com/photos/guille/81452528/
+
+[giist]: https://gist.github.com/KuoE0/5163266
 
 [p1]: http://i.minus.com/jigFS72BLM5dU.jpg
 [p2]: http://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif
+
+[feature photo]: http://i.minus.com/jbn9twXcvoRsDQ.jpg
