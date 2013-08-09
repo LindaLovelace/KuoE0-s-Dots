@@ -42,19 +42,11 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 ### 使用 OpenSSL 編譯 pycurl
 
-```terminal
-$ sudo apt-get install build-essential fakeroot dpkg-dev
-$ mkdir ~/python-pycurl-openssl
-$ cd ~/python-pycurl-openssl
-$ sudo apt-get source python-pycurl
-$ sudo apt-get build-dep python-pycurl
-$ sudo apt-get install libcurl4-openssl-dev
-$ sudo dpkg-source -x pycurl_7.19.0-4ubuntu3.dsc
-$ cd pycurl-7.19.0
-$ sudo vim debian/control -c "%s/libcurl4-gnutls-dev/libcurl4-openssl-dev/g" -c "wq"
-$ sudo dpkg-buildpackage -rfakeroot -b
-$ sudo dpkg -i ../python-pycurl_7.19.0-4ubuntu3_amd64.deb
-```
+以下為我撰寫的 shell script  可以自動進行替換安裝：
+
+<script src="https://gist.github.com/KuoE0/6192061.js"></script>
+
+Source code on [gist][gist].
 
 上面的步驟中，其中有一步為 `apt-get source python-pycurl`，該步驟為獲取 pycurl 的原始碼。由於我使用的 distribution 是 [LinuxMint 13][1]，預設的 repositories 中並沒有擷取 source 的 URI，於是只能手動增加。開啟 /etc/apt/sources.list 檔案，並加入以下這行。在執行 `apt-get update` 更新 APT 套件庫，就可以順利獲取 pycurl 的原始碼。
 
@@ -82,3 +74,4 @@ Type "help", "copyright", "credits" or "license" for more information.
 [2]: http://blog.kuoe0.ch/posts/84358/prevent-apt-get-upgrade-to-upgrade-specific-packages
 [3]: http://blog.float.tw/
 [4]: http://blog.float.tw/2012/06/git-gnutls-handshake-error.html
+[gist]: https://gist.github.com/KuoE0/6192061
