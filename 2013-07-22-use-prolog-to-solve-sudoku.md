@@ -2,9 +2,10 @@
 [date]: 2013-07-22
 [title]: 使用 Prolog 求解數獨
 [name]: use-prolog-to-solve-sudoku
-[tag]: Prolog, sudoku, SWI-Prolog
-[photo]: http://i.minus.com/jb0jdFbhXNCUR4.png
+[tag]: Prolog, sudoku | 數獨
 -->
+
+![使用 Prolog 求解數獨][feature photo]
 
 這學期第二個程式作業是 Prolog，前面已經寫過簡單的教學 ([link][1]) 了，看完那份簡略的教學後，我想應該有機會可以寫出這個作業！不過，我個人的解法上，還是有部分語法是在該教學沒提到的就是。
 
@@ -22,7 +23,7 @@
 
 <script src="https://gist.github.com/KuoE0/6049175.js"></script>
 
-Source Code on [Gist][6]
+Source code on [gist][gist].
 
 首先從第 76 行來看，是程式的進入點，並指定從第 71 行的 `sudoku_solver` 開始。第 71 行的 `sudoku_solver` 才是程式的主體，其內容為從 standard input 讀入題目，再進行求解，最後將答案輸出至 standard output。
 
@@ -30,7 +31,7 @@ Source Code on [Gist][6]
 
 初始知識庫的過程在第 31 行，該敘述會依序讀入所有元素，若該元素為空的則跳過（第 42 行），否則就將替該元素增加 constraint 的 fact（第 33 行）。增加 fact 的方式是根據 index 找出該元素屬於哪一行、哪一列以及哪一個區塊，再替該行該列該區塊增加一個 fact。
 
-> 例如：在 index 為 17 的元素為 2，計算後得知該 index 在第 1 列第 8 行的位置，且該位置屬於第 2 個區塊（P.S. 從 0 開始）。因此就要新增以下三個 fact：`row_used(1, 2)`、`col_used(8, 2)`、`block_used(2, 2)`。表示第 1 列、第 8 行以及第 2 個區塊都已經存在 2 這個數字了。
+例如：在 index 為 17 的元素為 2，計算後得知該 index 在第 1 列第 8 行的位置，且該位置屬於第 2 個區塊（P.S. 從 0 開始）。因此就要新增以下三個 fact：`row_used(1, 2)`、`col_used(8, 2)`、`block_used(2, 2)`。表示第 1 列、第 8 行以及第 2 個區塊都已經存在 2 這個數字了。
 
 完成知識庫的初始化後，開此進行求解，可以在第 55 行找到求解的程序。求解的過程也是讀入所有元素，若該元素為已填入數字，則不需要進行枚舉，往下一個數字前進。遇到空元素則開始進行枚舉，枚舉方式為列舉出 1~9 的數字，根據該位置的 index 來檢查是否已經存在該數字在該列、該行或該區塊出現過了，可以查看第 24 行的 `available` 程序。找到可放置的數字後，就要將該數字動態的新增到知識庫中，參見第 66 到 68 行。放置後，再繼續往下一個數字前進，直到沒有元素為止。
 
@@ -42,27 +43,25 @@ Source Code on [Gist][6]
 
 測試了一下該程式，我個人認為還滿快的，連號稱[最難的數獨][5]也只要花 0.23 秒就可以解決了。程式執行方式如下：
 
-```
+```bash
 $ swipl -qs sudoku_solver.pl < sudoku.in > sudoku.out
 ```
 
 **sudoku.in**
 
-```
-0 0 5 3 0 0 0 0 0 8 0 0 0 0 0 0 2 0 0 7 0 0 1 0 5 0 0 4 0 0 0 0 5 3 0 0 0 1 0 0 7 0 0 0 6 0 0 3 2 0 0 0 8 0 0 6 0 5 0 0 0 0 9 0 0 4 0 0 0 0 3 0 0 0 0 0 0 9 7 0 0
-```
+	0 0 5 3 0 0 0 0 0 8 0 0 0 0 0 0 2 0 0 7 0 0 1 0 5 0 0 4 0 0 0 0 5 3 0 0 0 1 0 0 7 0 0 0 6 0 0 3 2 0 0 0 8 0 0 6 0 5 0 0 0 0 9 0 0 4 0 0 0 0 3 0 0 0 0 0 0 9 7 0 0
 
 **sudoku.out**
 
-```
-1 4 5 3 2 7 6 9 8 8 3 9 6 5 4 1 2 7 6 7 2 9 1 8 5 4 3 4 9 6 1 8 5 3 7 2 2 1 8 4 7 3 9 5 6 7 5 3 2 9 6 4 8 1 3 6 7 5 4 2 8 1 9 9 8 4 7 6 1 2 3 5 5 2 1 8 3 9 7 6 4 
-```
+	1 4 5 3 2 7 6 9 8 8 3 9 6 5 4 1 2 7 6 7 2 9 1 8 5 4 3 4 9 6 1 8 5 3 7 2 2 1 8 4 7 3 9 5 6 7 5 3 2 9 6 4 8 1 3 6 7 5 4 2 8 1 9 9 8 4 7 6 1 2 3 5 5 2 1 8 3 9 7 6 4 
 
-[1]: http://kuoe0.ch/2288/prolog-tutorial/
+[1]: http://blog.kuoe0.ch/posts/84449/prolog-tutorial
 [2]: http://programmablelife.blogspot.tw/2012/07/prolog-sudoku-solver-explained.html
 [3]: http://www.swi-prolog.org/pldoc/doc_for?object=transpose/2
 [4]: http://www.karthiknadig.com/2012/03/01/sudoku-in-prolog/
 [5]: http://www.telegraph.co.uk/science/science-news/9359579/Worlds-hardest-sudoku-can-you-crack-it.html
-[6]: https://gist.github.com/KuoE0/6049175
+[gist]: https://gist.github.com/KuoE0/6049175
 
 [p1]: http://i.minus.com/jIBWSsYnEOCcF.jpg
+
+[feature photo]: http://i.minus.com/jb0jdFbhXNCUR4.png
