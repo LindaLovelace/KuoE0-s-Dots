@@ -52,12 +52,12 @@ pseudo code
 
 ```pesudo
 for i in [ 1, n )
-	temp = A[ i ]
-	pos = i
-	while pos - 1 >= 0 && A[ pos - 1 ] > A[ pos ]
-		A[ pos ] = A[ pos - 1 ]
-		pos = pos - 1
-	A[ pos ] = temp
+    temp = A[ i ]
+    pos = i
+    while pos - 1 >= 0 && A[ pos - 1 ] > A[ pos ]
+        A[ pos ] = A[ pos - 1 ]
+        pos = pos - 1
+    A[ pos ] = temp
 ```
 
 Source Code
