@@ -1,5 +1,5 @@
 <!--
-[date]: 2013-04-14-1
+[date]: 2013-04-14
 [title]: [GCJ 2013] Qualification Round - A - Tic-Tac-Toe-Tomek
 [name]: gcj-2013-qualification-round-a-tic-tac-toe-tomek
 [tag]: Google Code Jam
@@ -21,13 +21,13 @@
 
 **Technique Detail**
 
-small case
+small case:
 
-> 1 ≤ T ≤ 10
+1 ≤ T ≤ 10
 
-large case
+large case:
 
-> 1 ≤ T ≤ 1000
+1 ≤ T ≤ 1000
 
 **輸入格式**
 
@@ -49,14 +49,14 @@ large case
 
 很明顯的這題就是 Qualification Round 的水題，做法非常容易。先是直接判斷 X 跟 O 有沒有人贏，檢查橫向直向與對角線。若有人勝利則輸出該勝利者，沒有的話在判斷是不是還有空格。如果還存在空格，那麼表示「遊戲尚未結束」，如果不存在空格了，那就輸出「平手」。
 
-> Time Complexity: O( 1 )
+> Time Complexity: O(1)
 
 Source Code
 ----------------
 
 <script src="https://gist.github.com/KuoE0/5381830.js"></script>
 
-給喜歡亂擋 javascript 的人：[source code link][code]
+Source code on [gist][gist].
 
 [1]: https://code.google.com/codejam/contest/2270488/dashboard#s=p0
-[code]: https://gist.github.com/5381830
+[gist]: https://gist.github.com/5381830
