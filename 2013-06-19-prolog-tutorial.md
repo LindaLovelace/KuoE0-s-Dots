@@ -90,7 +90,7 @@ isDad(蔣經國, 蔣孝武).
     
 那個該怎麼在 SWI Prolog 中宣告這些規則呢？首先先開啓 SWI Prolog 的 interactive shell，在終端機中輸入 `swipl` 開啟。執行後會輸出以下訊息：
 
-```
+```prolog
     Welcome to SWI-Prolog (Multi-threaded, 64 bits, Version 6.2.6)
     Copyright (c) 1990-2012 University of Amsterdam, VU Amsterdam
     SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software,
@@ -128,7 +128,7 @@ isDad(蔣經國, 蔣孝武).
 
 欲離開 SWI Prolog 的話，只要輸入 `halt.` 即可。以下是完整的執行流程：
 
-```
+```prolog
 $ swipl
 Welcome to SWI-Prolog (Multi-threaded, 64 bits, Version 6.2.6)
 Copyright (c) 1990-2012 University of Amsterdam, VU Amsterdam
