@@ -3,8 +3,9 @@
 [title]: [Sort] 淺談 merge sort
 [name]: sort-about-merge-sort
 [tag]: ACM-ICPC, sort | 排序, algorithm | 演算法
-[photo]: http://i.minus.com/j8ZJkWieqa4Za.jpg
 -->
+
+![淺談 merge sort][feature photo]
 
 中譯「合併排序法」，這次要介紹的可是個高效演算法，雖然在小量資料時可能不見得有明顯優勢，但資料量一大即可發現極大的差距！
 
@@ -56,70 +57,69 @@ pseudo code
 
 **Tradition Merge Sort**
 
-	function merge_sort( A ):
-		if length( A ) == 1
-			return
-		
-		// divide
-		mid = length( A ) / 2
-		left = A[ i, mid )
-		right = A[ mid, length( A ) ]
-		
-		merge_sort( left )
-		merge_sort( right )
-		
-		// merge
-		for i in [ 0, n )
-			if left is empty
-				A[ i ] = first( right )
-				right = rest( right )
-			else if right is empty
-				A[ i ] = first( left )
-				left = rest( left )
-			else if first( left ) is less than first( right )
-				A[ i ] = first( left )
-				left = rest( left )
-			else
-				A[ i ] = first( right )
-				right = rest( right )
-	
-		return
-		
+```pseudo
+function merge_sort( A ):
+    if length( A ) == 1
+        return
+
+    // divide
+    mid = length( A ) / 2
+    left = A[ i, mid )
+    right = A[ mid, length( A ) ]
+    
+    merge_sort( left )
+    merge_sort( right )
+    
+    // merge
+    for i in [ 0, n )
+        if left is empty
+            A[ i ] = first( right )
+            right = rest( right )
+        else if right is empty
+            A[ i ] = first( left )
+            left = rest( left )
+        else if first( left ) is less than first( right )
+            A[ i ] = first( left )
+            left = rest( left )
+        else
+            A[ i ] = first( right )
+            right = rest( right )
+
+    return
+```
+        
 **Natural Merge Sort**
 
 這邊我僅僅寫出切割的部分，合併的部分都僅用 merge 表示：
 
-	function naturalMergeSort( A ):
-		B, C are empty sequence
-		CUR refer to B
-		
-		LAST = A[ 0 ]
-		
-		while A is not  empty
-			if first( A ) >= LAST
-				append first(A) to CUR
-				LAST = first( A )
-				A = rest( A )
-			else 
-				if CUR refer to B
-					CUR refer to C
-				else
-					CUR refer to B
-				LAST = first( A )
-				
-		if B is empty or C is empty
-			return
-		
-		naturalMergeSort( B )
-		naturalMergeSort( C )
-		
-		A = merge( B, C )
-		
-		
-			
-			
-
-		
+```pseudo
+function naturalMergeSort( A ):
+    B, C are empty sequence
+    CUR refer to B
+    
+    LAST = A[ 0 ]
+    
+    while A is not  empty
+        if first( A ) >= LAST
+            append first(A) to CUR
+            LAST = first( A )
+            A = rest( A )
+        else 
+            if CUR refer to B
+                CUR refer to C
+            else
+                CUR refer to B
+            LAST = first( A )
+            
+    if B is empty or C is empty
+        return
+    
+    naturalMergeSort( B )
+    naturalMergeSort( C )
+    
+    A = merge( B, C )
+```
+        
 Source Code
 ----------------
 
@@ -127,13 +127,13 @@ Source Code
 
 <script src="https://gist.github.com/KuoE0/5091967.js?file=mergeSort.cpp"></script>
 
-Source code on [Gist][1]
+Source code on [gist][gist].
 
 **Natural Merge Sort**
 
 <script src="https://gist.github.com/KuoE0/5091967.js?file=mergeSort-natural.cpp"></script>
 
-Source code on [Gist][2]
+Source code on [gist][gist].
 
 效能比較
 ----------
@@ -142,19 +142,19 @@ Source code on [Gist][2]
 
 ![compare][p1]
 
-資料數量 | insertion sort | merge sort | natural merge sort
----|---|---|---
-50|0.01|0.01|0.01
-100|0.01|0.02|0.03
-500|0.16|0.09|0.14
-1000|0.60|0.18|0.29
-2500|3.55|0.47|0.76
-5000|x|0.98|1.55
-7500|x|1.37|2.18
-10000|x|2.06|3.17
-100 *|x|0.18|0.09
-1000 *|x|0.22|0.11
-10000 *|x|1.91|0.76
+| 資料數量 | insertion sort | merge sort | natural merge sort |
+| ---|---|---|--- |
+| 50 | 0.01 | 0.01 | 0.01 |
+| 100 | 0.01 | 0.02 | 0.03 |
+| 500 | 0.16 | 0.09 | 0.14 |
+| 1000 | 0.60 | 0.18 | 0.29 |
+| 2500 | 3.55 | 0.47 | 0.76 |
+| 5000 | x | 0.98 | 1.55 |
+| 7500 | x | 1.37 | 2.18 |
+| 10000 | x | 2.06 | 3.17 |
+| 100 * | x | 0.18 | 0.09 |
+| 1000 * | x | 0.22 | 0.11 |
+| 10000 * | x | 1.91 | 0.76 |
 
 
 以上測試資料皆為 100 組，單位為秒 (second)，其中有星號的測試資料表示數列本身是由多組有序數列組成。欄位中標示 x 表示數值與其它欄位差異過大，為了避免圖表因該數據使得上現過大，而無法觀察細微部分，故移除該資料。
@@ -167,19 +167,21 @@ Source code on [Gist][2]
 
 <script async class="speakerdeck-embed" data-id="2c4cff1067f301306a3822000a1f8082" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 
-Slide on [Speaker Deck][3]
+Slide on [Speaker Deck][1].
 
-[Wikipedia][4] 上的示意動畫：
+[Wikipedia][2] 上的示意動畫：
 
 ![merge sort][p2]
 
-(photo via [billaday][5], CC License)
+(photo via [billaday][3], CC License)
 
-[1]: https://gist.github.com/KuoE0/5091967#file-mergesort-cpp
-[2]: https://gist.github.com/KuoE0/5091967#file-mergesort-natural-cpp
-[3]: https://speakerdeck.com/kuoe0/merge-sort
-[4]: http://zh.wikipedia.org/zh-tw/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F
-[5]: http://www.flickr.com/photos/kecko/64801051/
+[1]: https://speakerdeck.com/kuoe0/merge-sort
+[2]: http://zh.wikipedia.org/zh-tw/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F
+[3]: http://www.flickr.com/photos/kecko/64801051/
+
+[gist]: https://gist.github.com/KuoE0/5091967
 
 [p1]: http://i.minus.com/jboI0iAhhdsdBX.jpg
 [p2]: http://upload.wikimedia.org/wikipedia/commons/c/c5/Merge_sort_animation2.gif
+
+[feature photo]: http://i.minus.com/j8ZJkWieqa4Za.jpg
