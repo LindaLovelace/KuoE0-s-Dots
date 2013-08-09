@@ -2,9 +2,10 @@
 [date]: 2013-04-12
 [title]: 重置被遺忘的 OS X 系統管理員密碼
 [name]: reset-the-forgotten-password-of-admin-in-os-x
-[tag]: Mac, OS X
-[photo]: http://i.minus.com/jbvYGjFOCRdKPq.jpg
+[tag]: OS X, security | 安全性
 -->
+
+![重置被遺忘的 OS X 系統管理員密碼][feature photo]
 
 實驗室有台似乎很久沒拿來用的 Macbook Air，而且前陣子才剛維修完拿回來，維修理由很蠢，竟然是乾燥劑塞進了耳機孔…。回到本篇重點，老師今天心血來潮的想拿出來用，但開機後遲遲無法登入，因為老師竟然忘記密碼了…。於是 google 了一下，找到了以下兩種方法：
 
@@ -42,3 +43,5 @@
 (photo via [seanmcmenemy][1], CC License)
 
 [1]: http://www.flickr.com/photos/seanfx/5753197806/
+
+[feature photo]: http://i.minus.com/jbvYGjFOCRdKPq.jpg
