@@ -2,10 +2,10 @@
 [date]: 2013-05-30
 [title]: Common Lisp 套件管理員 - Quicklisp
 [name]: package-manager-for-common-lisp-quicklisp
-[tag]: Common Lisp, Lisp, Quicklisp
+[tag]: Common Lisp, Quicklisp
 -->
 
-Quicklisp 是 Common Lisp 的第三方套件管理套件，就像 Python 的 pip 或是 Ruby 的 gem 一樣，可以利用它安裝該語言豐富的第三方套件。可以到[這裡][1]查看目前支援的套件有哪些！
+Quicklisp 是 Common Lisp 的第三方套件管理套件，就像 Python 的 pip 或是 Ruby 的 gem 一樣，可以利用它安裝該語言豐富的第三方套件。可以到官方網站 ([link][1]) 查看目前支援的套件有哪些！
 
 不過目前 Quicklisp 還是 beta 版，不過我目前使用上還沒遇到什麼大問題。不過有點討厭的是在讀取套件時的輸出竟然是輸出到 standard output，導致我寫個程式時，還需要把他的輸出導出到其他地方，例如：/dev/null。
 
@@ -46,26 +46,30 @@ Quicklisp 是 Common Lisp 的第三方套件管理套件，就像 Python 的 pip
 安裝套件
 -------
 
-	To load a system, use: (ql:quickload "system-name")
+```clisp
+To load a system, use: (ql:quickload "system-name")
+```
 
 以上是讀取套件的指令，用 system 這詞還真讓我有點不懂他的意思…。不過，這裡的 system 就是 package/library 的意思啦！所以我們如果要 load 套件進來，只要輸入 `(ql:quick load "package_name")`，例如我要安裝 drakma 這個套件，就只要在 sbcl 的 REPL 中輸入 `(ql:quickload "drakma")` 即可。
 
 他會出現以下訊息，並在最後回傳包含該套件名稱的 list。（是說這個輸出其實有點討厭！）不過，如果是第一次讀入該套件的話，由於電腦中還沒有該套件存在，所以會先出現下載的訊息。
 
-	To load "drakma":
-	  Load 1 ASDF system:
-	    drakma
-	; Loading "drakma"
-	.......
-	("drakma")
+```clisp
+To load "drakma":
+  Load 1 ASDF system:
+    drakma
+; Loading "drakma"
+.......
+("drakma")
+```
 
 看他的回傳值感覺應該可以一次讀取多個套件才是，不然似乎設計成回傳 list 沒有多大的意義？！於是查看了一下程式碼，發現有以下幾行：
 
-	(unless (consp systems)
-		(setf systems (list systems)))
-	(dolist (thing systems systems)
-		…
-		
+    (unless (consp systems)
+        (setf systems (list systems)))
+    (dolist (thing systems systems)
+        …
+        
 quickload 的說明中也有寫到：
 
 > SYSTEMS is a designator for a list of things to be loaded.
@@ -75,15 +79,19 @@ quickload 的說明中也有寫到：
 搜尋套件
 -------
 
-	To find systems, use: (ql:system-apropos "term")
-	
+```clisp
+To find systems, use: (ql:system-apropos "term")
+```
+    
 以上指令就是用來搜尋套件庫的，他會搜尋所有套件名稱含有 term 的套件。例如我要搜尋含有 "regex" 的套件，就只要輸入 `(ql:system-apropos "regex")` 就會回傳以下資訊：
 
-	#<SYSTEM com.informatimago.common-lisp.regexp / com.informatimago-20130312-git / quicklisp 2013-04-20>
-	#<SYSTEM lispbuilder-regex / lispbuilder-20130312-svn / quicklisp 2013-04-20>
-	#<SYSTEM recursive-regex / recursive-regex-20120407-git / quicklisp 2013-04-20>
-	#<SYSTEM recursive-regex-test / recursive-regex-20120407-git / quicklisp 2013-04-20>
-	#<SYSTEM regex / regex-20120909-git / quicklisp 2013-04-20>
+```clisp
+#<SYSTEM com.informatimago.common-lisp.regexp / com.informatimago-20130312-git / quicklisp 2013-04-20>
+#<SYSTEM lispbuilder-regex / lispbuilder-20130312-svn / quicklisp 2013-04-20>
+#<SYSTEM recursive-regex / recursive-regex-20120407-git / quicklisp 2013-04-20>
+#<SYSTEM recursive-regex-test / recursive-regex-20120407-git / quicklisp 2013-04-20>
+#<SYSTEM regex / regex-20120909-git / quicklisp 2013-04-20>
+```
 
 查出有哪些相關的套件後，就可以依照自己喜好選擇要安裝哪個囉！安裝方式就跟前面提到的一樣！
 

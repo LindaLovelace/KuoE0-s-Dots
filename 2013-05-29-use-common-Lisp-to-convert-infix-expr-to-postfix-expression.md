@@ -2,7 +2,7 @@
 [date]: 2013-05-29
 [title]: 使用 Common Lisp 實現中序運算式轉後序運算式
 [name]: use-common-Lisp-to-convert-infix-expr-to-postfix-expr
-[tag]: Lisp, Common Lisp, postfix expression, functional programming
+[tag]: Common Lisp, postfix expression | 後序運算式
 -->
 
 這學期擔任程式語言課程助教，該課程會額外介紹三個語言分別是 Lisp、Prolog 與 Python。對於只學過 C/C++/Java 的大二學生來說，這幾種語言的思考邏輯應該比較特別，尤其是 Lisp 的 functional programming 與 Prolog 的 programming in logical。
@@ -19,19 +19,23 @@
 
 於是，我又發現了 `let` 敘述，他的 syntax 為 `(let (variable-declaration-form*) body-form*)`。但我一直看不懂到底該怎麼用，先試了 `(let (x 1) (print x))`，結果出現錯誤。研究了一下才發現是要 `(let ((x 1)) (print x))`，由於第一個參數他是個變數宣告的 list，可以宣告多組變數，例如：
 
-	(let ((x 1) (y 2))
-			(print x)
-			(print y))
-	
+```clisp
+(let ((x 1) (y 2))
+    (print x)
+    (print y))
+```
+    
 所以在宣告一個變數時會發現它被用兩層括號包住。而 `let` 的 body-form* 則是在這個 `let` 敘述內要做的事情，所以也可以有多個敘述在裡面，並且會把最後一個敘述的回傳值作為 `let` 的回傳值。
 
 在知道怎麼宣告變數後，接下來又遇到另一個問題，就是變數的 lifetime。原來用 `let` 宣告的變數只能在 `let` 區塊內使用。這樣一來似乎如果我要宣告一個 function 時，一開始就得用 `let` 敘述來宣告區域變數。所以其實可以這麼想，把 `let` 想成是 C 的大括號區塊，一進入區塊就得宣告好該區塊會用到的 local variable，理解 `let` 的用法後我覺得對於寫 Lisp 程式來說可說是一大進展！
 
 接下來遇到下一個問題－迴圈 (loop)。發現有 `do` 的敘述可以使用，其 syntax 為 `(do ({var | (var [init-form [step-form]])}*) (end-test-form result-form*) declaration* {tag | statement}*)`，例如：
 
-	(do ((i 0 (+ i 1)))
-		((> i 10) i)
-		(print i))
+```clisp
+(do ((i 0 (+ i 1)))
+    ((> i 10) i)
+    (print i))
+```
 
 該敘述會輸出 [0,10] 之間的數字，並回傳 11。對於 `do` 的第一個參數就是變數宣告，可以看作是 C 語言中的 for-loop 其用分號分隔的第一個區塊。而對於每個宣告變數的區塊來說，第一個是變數名稱，第二個是初始值（可不指定），第三個則是每次回圈結束後會進行的動作（可不指定）。所以以上面的例子來說，就是宣告一個變數 `i`，其初始值為 0，且每次迴圈結束就會遞增 1。而 `do` 的第二個參數為終止條件與跳出迴圈後會執行的敘述，並將最後一個敘述作為回傳值。以上面為例就是當 i 大於 10 時會跳出迴圈，並將 i 當前的值作為 `do` 的回傳值！而其餘部分就是迴圈內要執行的敘述，以上為例就是 `(print i)`，輸出每次 `i` 的值。
 
@@ -39,11 +43,13 @@
 
 這次作業是中序運算式轉換為後序運算式，有學過的應該都知道我們會需要一個 stack 的資料結構。不過 Lisp 本身就有 list 的資料結構，利用 `car` 與 `cdr` 應該很容易實作 stack！不過，在看一些教學文件有看到 Lisp 本身就有內建 stack 的操作。分別是 `push` 與 `pop` 敘述，其 syntax 為 `(push value stack)` 與 `(pop stack)`，其中 stack 就是一個 list 的變數！請見以下範例：
 
-	(let ((stk ())
-		(ret))
-		(push 1 stk)
-		(push 2 stk)
-		(setf ret (pop stk)))
+```clisp
+(let ((stk ())
+    (ret))
+    (push 1 stk)
+    (push 2 stk)
+    (setf ret (pop stk)))
+```
 
 該段表示先將 1 放入一個空的 stack 中，再把 2 也放入。接下來在將 stack 頂端的數字拿出來，並賦予給變數 ret，並將 `ret` 作為 `let` 的回傳值。執行後即可發現，`let` 會回傳 2。
 
@@ -51,7 +57,7 @@
 
 <script src="https://gist.github.com/5664977.js"></script>
 
-Source Code on [Gist][gist]
+Source code on [gist][gist].
 
 上面需要注意一下 expr.lsp 的第一行，為了讓該檔案給予執行權限後可以直接執行，才特別加上去了！若是出現錯誤，請移除該行！
 
