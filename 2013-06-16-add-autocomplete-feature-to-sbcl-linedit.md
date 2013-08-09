@@ -50,5 +50,5 @@ CL-USER(1): (ex
      
 [1]: http://bpython-interpreter.org/
 [2]: https://github.com/nikodemus/linedit
-[3]: http://kuoe0.ch/2258/package-manager-for-common-lisp-quicklisp/
+[3]: http://blog.kuoe0.ch/posts/84439/package-manager-for-common-lisp-quicklisp
 [feature photo]: http://i.minus.com/jbaMVbdmwTT8oR.png
