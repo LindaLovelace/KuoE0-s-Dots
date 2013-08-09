@@ -68,6 +68,11 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 另外，`apt-get upgrade` 會造成我們自行編譯的 pycurl 重新被 GnuTLS 版本的覆蓋。因此我們需要告知 APT 不要升級當前版本的 pycurl。方法可以參考「[防止 apt-get upgrade 升級特定套件][2]」該文章。
 
+```bash
+echo "python-pycurl hold" | sudo dpkg --set-selections
+echo "python-pycurl-dbg hold" | sudo dpkg --set-selections
+```
+
 前面提到 git 也可能會遇到該問題，解決的方法也是令 git 使用 OpenSSL 重新編譯 git 即可。
 
 [1]: http://linuxmint.com/
