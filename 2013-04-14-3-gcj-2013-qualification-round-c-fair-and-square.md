@@ -1,5 +1,5 @@
 <!--
-[date]: 2013-04-14-3
+[date]: 2013-04-14
 [title]: [GCJ 2013] Qualification Round - C - Fair and Square
 [name]: gcj-2013-qualification-round-c-fair-and-square
 [tag]: Google Code Jam
@@ -16,18 +16,18 @@
 
 small case
 
-> 1 ≤ T ≤ 100  
-> 1 ≤ A ≤ B ≤ 1000
+- 1 ≤ T ≤ 100
+- 1 ≤ A ≤ B ≤ 1000
 
 large case 1
 
-> 1 ≤ T ≤ 10000  
-> 1 ≤ A ≤ B ≤ 10<sup>14</sup>
+- 1 ≤ T ≤ 10000
+- 1 ≤ A ≤ B ≤ 10<sup>14</sup>
 
 large case 2
 
-> 1 ≤ T ≤ 1000  
-> 1 ≤ A ≤ B ≤ 10<sup>100</sup>
+- 1 ≤ T ≤ 1000  
+- 1 ≤ A ≤ B ≤ 10<sup>100</sup>
 
 **輸入格式**
 
@@ -63,7 +63,7 @@ Source Code
 
 <script src="https://gist.github.com/KuoE0/5382008.js"></script>
 
-給喜歡亂擋 javascript 的人：[source code link][code]
+Source code on [gist][gist].
 
 [1]: https://code.google.com/codejam/contest/2270488/dashboard#s=p2
-[code]: https://gist.github.com/5382008
+[gist]: https://gist.github.com/5382008
