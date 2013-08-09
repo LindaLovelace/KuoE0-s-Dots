@@ -3,10 +3,11 @@
 [title]: [Sort] 淺談 selection sort
 [name]: sort-about-selection-sort
 [tag]: ACM-ICPC, sort | 排序, algorithm | 演算法
-[photo]: http://i.minus.com/jbtwu3JugL0Az5.jpg
 -->
 
-中譯「選擇排序法」，如同  [bubble sort][1] 與 [insertion sort][2] 一樣是非常直觀的排序法，而且我認為 selection sort 是最直覺最簡單的作法。這三個排序法都有著大量元素時，效率不佳的問題，畢竟其時間複雜度皆為 O(*n*<sup>2</sup>)。Selection sort 也是一個 in-place 演算法，運算時除了待排序的 n 個元素外，僅需要額外 O(1) 的空間！
+![淺談 selection sort][feature photo]
+
+中譯「選擇排序法」，如同 [bubble sort][1] 與 [insertion sort][2] 一樣是非常直觀的排序法，而且我認為 selection sort 是最直覺最簡單的作法。這三個排序法都有著大量元素時，效率不佳的問題，畢竟其時間複雜度皆為 O(*n*<sup>2</sup>)。Selection sort 也是一個 in-place 演算法，運算時除了待排序的 n 個元素外，僅需要額外 O(1) 的空間！
 
 Selection sort 與 insertion sort 很像，都是將數列分為已排序段與未排序段。不過與 insertion sort 不同的是，selection 並不是在已排序段中尋找插入位置，而是每次都在未排序段中尋找最小值，並放置在已排序段的末端。
 
@@ -31,21 +32,23 @@ Selection sort 與 insertion sort 很像，都是將數列分為已排序段與�
 pseudo code
 -----------------
 
-	for i in [ 1, n )
-		minimum = A[ i ]
-		pos = i
-		for j in [ i + 1, n )
-			if minimum > A[ j ]
-				minimum = A[ j ]
-				pos = j
-		swap A[ i ] and A[ j ]
+```pseudo
+for i in [ 1, n )
+    minimum = A[ i ]
+    pos = i
+    for j in [ i + 1, n )
+        if minimum > A[ j ]
+            minimum = A[ j ]
+            pos = j
+    swap A[ i ] and A[ j ]
+```
 
 Source Code
 ----------------
 
 <script src="https://gist.github.com/KuoE0/5080566.js"></script>
 
-Source code on [Gist][3]
+Source code on [gist][gist].
 
 效能比較
 ----------
@@ -54,40 +57,42 @@ Source code on [Gist][3]
 
 ![compare][p1]
 
-資料數量 | bubble sort | insertion sort | selection sort
----|---|---|---
-50|0.01|0.01|0.01
-100|0.02|0.01|0.01
-500|0.39|0.16|0.22
-1000|1.51|0.60|0.82
-2500|9.31|3.55|4.92
-5000|37.05|14.00|19.40
-7500|72.55|27.37|37.84
-10000|147.95|55.61|77.07
+| 資料數量 | bubble sort | insertion sort | selection sort |
+| --- | --- | --- | --- |
+| 50 | 0.01 | 0.01 | 0.01 |
+| 100 | 0.02 | 0.01 | 0.01 |
+| 500 | 0.39 | 0.16 | 0.22 |
+| 1000 | 1.51 | 0.60 | 0.82 |
+| 2500 | 9.31 | 3.55 | 4.92 |
+| 5000 | 37.05 | 14.00 | 19.40 |
+| 7500 | 72.55 | 27.37 | 37.84 |
+| 10000 | 147.95 | 55.61 | 77.07 |
 
 以上測試資料皆為 100 組，單位為秒 (second)。
 
-仔細分析可以發現 selection sort 會有 n( n - 1 ) / 2 次的比較與最多 n - 1 次最少 0 次的交換操作。如同 insertion sort 與 bubble sort 的差異一般，主要為運算量的差異，因此 selection sort 的效率也優於 bubble sort。至於 selection sort 略遜於 insertion sort 的原因，以交換操作與比較操作的次數來看，兩者擁有差不多的運算量，因此我認為 selection sort 會略遜於 insertion sort 的主要原因為需要額外紀錄最小元素的位置以用來交換。
+仔細分析可以發現 selection sort 會有 n(n - 1) / 2 次的比較與最多 n - 1 次最少 0 次的交換操作。如同 insertion sort 與 bubble sort 的差異一般，主要為運算量的差異，因此 selection sort 的效率也優於 bubble sort。至於 selection sort 略遜於 insertion sort 的原因，以交換操作與比較操作的次數來看，兩者擁有差不多的運算量，因此我認為 selection sort 會略遜於 insertion sort 的主要原因為需要額外紀錄最小元素的位置以用來交換。
 
 以下的投影片中有 selection sort 的執行過程，有興趣可以前往參考！
 
 <script async class="speakerdeck-embed" data-id="8fb780d067010130c54712313d140c86" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 
-Slide on [Speaker Deck][4]
+Slide on [Speaker Deck][3]
 
-不免俗要來個 [Wikipedia][5] 上的示意動畫！
+不免俗要來個 [Wikipedia][4] 上的示意動畫！
 
 ![selection sort][p2]
 
-(photo via [billaday][6], CC License)
+(photo via [billaday][5], CC License)
 
+[1]: http://blog.kuoe0.ch/posts/84383/sort-about-bubble-sort
+[2]: http://blog.kuoe0.ch/posts/84424/sort-about-insertion-sort
+[3]: https://speakerdeck.com/kuoe0/selection-sort
+[4]: http://zh.wikipedia.org/wiki/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F
+[5]: http://www.flickr.com/photos/billselak/4173183227/
 
-[1]: http://kuoe0.ch/2111/sort-about-bubble-sort/
-[2]: http://kuoe0.ch/2120/sort-about-insertion-sort/
-[3]: https://gist.github.com/KuoE0/5080566#file-selectionsort-cpp
-[4]: https://speakerdeck.com/kuoe0/selection-sort
-[5]: http://zh.wikipedia.org/wiki/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F
-[6]: http://www.flickr.com/photos/billselak/4173183227/
+[gist]: https://gist.github.com/KuoE0/5080566
 
 [p1]: http://i.minus.com/jbay4197QZ4RM0.jpg
 [p2]: http://upload.wikimedia.org/wikipedia/commons/b/b0/Selection_sort_animation.gif
+
+[feature photo]: http://i.minus.com/jbtwu3JugL0Az5.jpg
