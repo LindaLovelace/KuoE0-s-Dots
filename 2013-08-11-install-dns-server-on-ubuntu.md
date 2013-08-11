@@ -326,24 +326,19 @@ Address: 140.116.5.6
 
 就可以透過本身機器設定的 DNS server 來查詢到該 domain name 對應到的 IP 了！像我這邊就是設定為 Google Public DNS，所以可以透過 8.8.8.8 來解析到正確的 IP。
 
-另外，可以藉由網路上提供的 DNS 檢測工具來做些安全性或性能上的檢測，例如：[DNS check][2]、[TWNIC DNS 檢測服務][3]、[DNS Sniffer][4]。
+另外，可以藉由網路上提供的 DNS 檢測工具來做些安全性或性能上的檢測，例如：[DNS check][2]、[TWNIC DNS 檢測服務][3]、[DNS Sniffer][4]、[DNS Stuff][5]。
 
 **參考資料：**
 
-- [DNS Server on Debian 6][5]
-- [Bind9 on Debian][6]
-- [Study DNS-DNS 進階設定、安全、檢測][7]
-- [鳥哥的Linux 私房菜-- DNS Server][8]
-- [DNS 線上教學研究計畫][9]
-- [使用 Ubuntu 安裝 Bind9: Domain Name Service (DNS)][10]
+- [DNS Server on Debian 6](http://note.drx.tw/2008/08/serverdns-server-static-adsl.html)
+- [Bind9 on Debian](http://neio.pixnet.net/blog/post/15546169-bind9-on-debian)
+- [Study DNS-DNS 進階設定、安全、檢測](http://www.weithenn.org/cgi-bin/wiki.pl?Study_DNS-DNS_%E9%80%B2%E9%9A%8E%E8%A8%AD%E5%AE%9A%E3%80%81%E5%AE%89%E5%85%A8%E3%80%81%E6%AA%A2%E6%B8%AC)
+- [鳥哥的Linux 私房菜-- DNS Server](http://linux.vbird.org/linux_server/0350dns.php)
+- [DNS 線上教學研究計畫](http://dns-learning.twnic.net.tw/)
+- [使用 Ubuntu 安裝 Bind9: Domain Name Service (DNS)](http://www.nowtaxes.com.tw/node/1114)
 
 [1]: https://developers.google.com/speed/public-dns/?hl=zh-TW
 [2]: http://dnscheck.pingdom.com/
 [3]: http://rs.twnic.net.tw/cgi-bin/dns.cgi
 [4]: http://www.dnssniffer.com/
-[5]: http://note.drx.tw/2008/08/serverdns-server-static-adsl.html
-[6]: http://neio.pixnet.net/blog/post/15546169-bind9-on-debian
-[7]: http://www.weithenn.org/cgi-bin/wiki.pl?Study_DNS-DNS_%E9%80%B2%E9%9A%8E%E8%A8%AD%E5%AE%9A%E3%80%81%E5%AE%89%E5%85%A8%E3%80%81%E6%AA%A2%E6%B8%AC
-[8]: http://linux.vbird.org/linux_server/0350dns.php
-[9]: http://dns-learning.twnic.net.tw/
-[10]: http://www.nowtaxes.com.tw/node/1114
+[5]: http://www.dnsstuff.com/
