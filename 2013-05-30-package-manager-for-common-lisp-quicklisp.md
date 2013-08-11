@@ -65,10 +65,12 @@ To load "drakma":
 
 看他的回傳值感覺應該可以一次讀取多個套件才是，不然似乎設計成回傳 list 沒有多大的意義？！於是查看了一下程式碼，發現有以下幾行：
 
-    (unless (consp systems)
-        (setf systems (list systems)))
-    (dolist (thing systems systems)
-        …
+```common-lisp
+(unless (consp systems)
+    (setf systems (list systems)))
+(dolist (thing systems systems)
+    …
+```
         
 quickload 的說明中也有寫到：
 
