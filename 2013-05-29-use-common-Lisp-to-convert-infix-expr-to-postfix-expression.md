@@ -19,7 +19,7 @@
 
 於是，我又發現了 `let` 敘述，他的 syntax 為 `(let (variable-declaration-form*) body-form*)`。但我一直看不懂到底該怎麼用，先試了 `(let (x 1) (print x))`，結果出現錯誤。研究了一下才發現是要 `(let ((x 1)) (print x))`，由於第一個參數他是個變數宣告的 list，可以宣告多組變數，例如：
 
-```clisp
+```common-lisp
 (let ((x 1) (y 2))
     (print x)
     (print y))
@@ -31,7 +31,7 @@
 
 接下來遇到下一個問題－迴圈 (loop)。發現有 `do` 的敘述可以使用，其 syntax 為 `(do ({var | (var [init-form [step-form]])}*) (end-test-form result-form*) declaration* {tag | statement}*)`，例如：
 
-```clisp
+```common-lisp
 (do ((i 0 (+ i 1)))
     ((> i 10) i)
     (print i))
@@ -43,7 +43,7 @@
 
 這次作業是中序運算式轉換為後序運算式，有學過的應該都知道我們會需要一個 stack 的資料結構。不過 Lisp 本身就有 list 的資料結構，利用 `car` 與 `cdr` 應該很容易實作 stack！不過，在看一些教學文件有看到 Lisp 本身就有內建 stack 的操作。分別是 `push` 與 `pop` 敘述，其 syntax 為 `(push value stack)` 與 `(pop stack)`，其中 stack 就是一個 list 的變數！請見以下範例：
 
-```clisp
+```common-lisp
 (let ((stk ())
     (ret))
     (push 1 stk)

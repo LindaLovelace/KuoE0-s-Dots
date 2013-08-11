@@ -19,7 +19,7 @@
 
 為了上我們每次打開 SBCL 都會自動載入 Linedit，需要在 ~/.sbclrc 中加入以下內容：
 
-```clisp
+```common-lisp
 ;;; Check for --no-linedit command-line option.
 (if (member "--no-linedit" sb-ext:*posix-argv* :test 'equal)
 	(setf sb-ext:*posix-argv* 
@@ -32,7 +32,7 @@
 
 如此以來，我們每次打該 SBCL 的 REPL 就會自動載入 Linedit 了！載入後會發現，SBCL 的 prompt 改變了，變成了 `CL-USER(1):`，並且該數字會隨著輸入的敘述增加而遞增！接著我們來試試 autocomplete 的功能，輸入 `(ex` 接著按下 tab 鍵。這時候 SBCL 就會跳出以下畫面：
 
-```clisp
+```common-lisp
 CL-USER(1): (ex
 exit    extern-alien    extended-char    exp    expt    export
 CL-USER(1): (ex
@@ -42,7 +42,7 @@ CL-USER(1): (ex
 
 不過要使用 autocomplete 也是要付出些代價的，就是每次 SBCL 開啓的時間將會增加，因為 Linedit 需要每次都重新載入所有函式庫，所以需要花點時間！如果不希望開啟 SBCL 時載入 Linedit 的話，只要在啟動 SBCL 時加入一項參數 `--no-linedit` 即可！但如果事後又想要手動載入的話，就依序執行以下敘述：
 
-```clisp
+```common-lisp
 (require :sb-aclrepl)
 (require :linedit)
 (funcall (intern "INSTALL-REPL" :linedit))

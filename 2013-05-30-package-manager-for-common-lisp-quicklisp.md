@@ -46,7 +46,7 @@ Quicklisp 是 Common Lisp 的第三方套件管理套件，就像 Python 的 pip
 安裝套件
 -------
 
-```clisp
+```common-lisp
 To load a system, use: (ql:quickload "system-name")
 ```
 
@@ -54,7 +54,7 @@ To load a system, use: (ql:quickload "system-name")
 
 他會出現以下訊息，並在最後回傳包含該套件名稱的 list。（是說這個輸出其實有點討厭！）不過，如果是第一次讀入該套件的話，由於電腦中還沒有該套件存在，所以會先出現下載的訊息。
 
-```clisp
+```common-lisp
 To load "drakma":
   Load 1 ASDF system:
     drakma
@@ -79,13 +79,13 @@ quickload 的說明中也有寫到：
 搜尋套件
 -------
 
-```clisp
+```common-lisp
 To find systems, use: (ql:system-apropos "term")
 ```
     
 以上指令就是用來搜尋套件庫的，他會搜尋所有套件名稱含有 term 的套件。例如我要搜尋含有 "regex" 的套件，就只要輸入 `(ql:system-apropos "regex")` 就會回傳以下資訊：
 
-```clisp
+```common-lisp
 #<SYSTEM com.informatimago.common-lisp.regexp / com.informatimago-20130312-git / quicklisp 2013-04-20>
 #<SYSTEM lispbuilder-regex / lispbuilder-20130312-svn / quicklisp 2013-04-20>
 #<SYSTEM recursive-regex / recursive-regex-20120407-git / quicklisp 2013-04-20>
