@@ -177,7 +177,7 @@ Options:
   --log=LOGFILE         Select the log output file
 ```
 
-不過，Linux 版的有個缺點，就是執行時會跳出瀏覽器的視窗。向我需要跑大量的資料，要截取非常多張圖，在處理時電腦就幾乎不能使用了。基本上每秒都會跳出新視窗，然後該是窗就會位於頂層，所以做什麼都不行，打字也會中斷…。
+不過，Linux 版的有個缺點，就是執行時會跳出瀏覽器的視窗。向我需要跑大量的資料，要截取非常多張圖，在處理時電腦就幾乎不能使用了。基本上每秒都會跳出新視窗，然後該視窗就會位於頂層，所以做什麼都不行，打字也會中斷…。
 
 [1]: http://www.gazegroup.org/downloads/23-gazetracker
 [2]: http://www.paulhammond.org/webkit2png/
