@@ -1,7 +1,7 @@
 <!--
 [date]: 2013-02-21 
 [title]: 在 CLI 下產生隨機整數
-[name]: generate-random-integer-in-cli
+[name]: generate-random-integer-under-cli
 [tag]: CLI | 命令列介面, Unix
 -->
 

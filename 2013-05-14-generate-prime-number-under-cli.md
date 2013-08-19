@@ -1,7 +1,7 @@
 <!--
 [date]: 2013-05-14
 [title]: 在 CLI 下產生質數表
-[name]: generate-prime-number-in-cli
+[name]: generate-prime-number-under-cli
 [tag]: CLI | 命令列介面, Unix, prime | 質數
 -->
 
