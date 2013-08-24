@@ -88,7 +88,7 @@ zone "55.116.140.in-addr.arpa" in {
 
 ```
 $TTL    604800
-@       IN SOA  5566.csie.ncku.edu.tw. admin.5566.csie.ncku.edu.tw. (
+@       IN SOA  ns.5566.csie.ncku.edu.tw. admin.5566.csie.ncku.edu.tw. (
                 2013080901      ; Serial Number
                 604800          ; Refresh
                 86400           ; Retry
@@ -107,7 +107,7 @@ kuoe0   IN A    140.116.5.6
 
 ```
 $TTL    604800
-@       IN SOA  5566.csie.ncku.edu.tw admin.5566.csie.ncku.edu.tw. (
+@       IN SOA  ns.5566.csie.ncku.edu.tw admin.5566.csie.ncku.edu.tw. (
                 20070926        ; Serial Number
                 604800          ; Refresh
                 86400           ; Retry
@@ -121,6 +121,25 @@ $TTL    604800
 66      IN PTR  www.5566.csie.ncku.edu.tw.
 66      IN PTR  dns.5566.csie.ncku.edu.tw.
 ```
+
+**SOA 格式**
+
+```
+@    IN SOA    MNAME  RNAME (
+        SERIAL
+        REFRESH
+        RETRY
+        EXPIRE
+        MINIMUM )
+```
+
+- `MNAME` 為 primary DNS server，輸入主要的 DNS 的 FQDN！
+- `RNAME` 為系統聯絡人的 E-mail，記得要把 `@` 符號取代為 `.`，還有因為位址是 FQDN，所以也別忘了最後面的 `.`。
+- `SERIAL` 為 DNS record 的流水號，每次更新後記得也要更新這個編號，而且要遞增！這樣一來，其他 DNS server 才知道 DSN record 有更新。
+- `REFRESH` 為次要 DNS server 的更新時間，表示次要 DNS server 需要多久來跟主要 DNS server 同步資料。
+- `RETRY` 為次要 DNS server 若是更新失敗要重試之前所需要等待的時間。
+- `EXPIRE` 為次要 DNS server 的 DNS record 過期時間，也就是如果次要 DNS server 一直無法向主要 DNS server 進行資料更新的話，一旦過了這個時間後，次要 DNS server 將不會再進行解析 DSN record。
+- `MINIMUM` 為 DNS record 的最小生存時間。當某個紀錄被查詢到後，DNS server 會將它給暫存起來，而在這個時間內的查詢都將直接利用該暫存的答案進行答覆。過了這個時間後，如果新的查詢才會進行解析。
 
 /etc/bind/named.conf.option
 --------------------------
@@ -336,6 +355,11 @@ Address: 140.116.5.6
 - [鳥哥的Linux 私房菜-- DNS Server](http://linux.vbird.org/linux_server/0350dns.php)
 - [DNS 線上教學研究計畫](http://dns-learning.twnic.net.tw/)
 - [使用 Ubuntu 安裝 Bind9: Domain Name Service (DNS)](http://www.nowtaxes.com.tw/node/1114)
+- [Oversimplified DNS](http://rscott.org/dns/soa.html)
+
+**UPDATE**
+
+- 2013/08/25: 加入 SOA 格式，與更正 SOA 中的 primary DNS 位址。
 
 [1]: https://developers.google.com/speed/public-dns/?hl=zh-TW
 [2]: http://dnscheck.pingdom.com/
