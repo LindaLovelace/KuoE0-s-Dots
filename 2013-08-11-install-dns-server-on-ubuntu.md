@@ -371,6 +371,7 @@ Address: 140.116.5.6
 **UPDATE**
 
 - 2013/08/25: 加入 SOA 格式，與更正 SOA 中的 primary DNS 位址。
+- 2013/08/25: 加入解決 recursive query warning 的方法。
 
 [1]: https://developers.google.com/speed/public-dns/?hl=zh-TW
 [2]: http://dnscheck.pingdom.com/
