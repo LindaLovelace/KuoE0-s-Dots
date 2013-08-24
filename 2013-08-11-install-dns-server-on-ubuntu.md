@@ -353,7 +353,7 @@ Address: 140.116.5.6
 
 > The name server answers recursive queries for 3rd parties (such as DNSCheck). By making a recursive query to a name server that provides recursion, an attacker can cause a name server to look up and cache information contained in zones under their control. Thus the victim name server is made to query the attackers malicious name servers, resulting in the victim caching and serving bogus data.
 
-簡單說就是一些 cracker 可以利用 recursive query 來使得使用者訪問到惡意網站。既然有漏洞就要修一下，詢問 Google 大神後發現只要在 **named.conf.option** 中加入 `recursion no` 即可。接著在進行一次檢測就可以看到正常的結果了！
+簡單說就是一些 cracker 可以利用 recursive query 來使得使用者訪問到惡意網站。既然有漏洞就要修一下，詢問 Google 大神後發現只要在 **named.conf.option** 中加入 `recursion no` 在重啓 BIND 服務即可。接著在進行一次檢測就可以看到正常的結果了！
 
 > Everything is fine.
 
