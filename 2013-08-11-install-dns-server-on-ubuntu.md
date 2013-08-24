@@ -347,6 +347,17 @@ Address: 140.116.5.6
 
 另外，可以藉由網路上提供的 DNS 檢測工具來做些安全性或性能上的檢測，例如：[DNS check][2]、[TWNIC DNS 檢測服務][3]、[DNS Sniffer][4]、[DNS Stuff][5]。
 
+**Recursive Query**
+
+在利用 [DNS check][2] 進行檢測時，發現到一個中度漏洞是 recursive query。以下是該網站告知我的危險：
+
+> The name server answers recursive queries for 3rd parties (such as DNSCheck). By making a recursive query to a name server that provides recursion, an attacker can cause a name server to look up and cache information contained in zones under their control. Thus the victim name server is made to query the attackers malicious name servers, resulting in the victim caching and serving bogus data.
+
+簡單說就是一些 cracker 可以利用 recursive query 來使得使用者訪問到惡意網站。既然有漏洞就要修一下，詢問 Google 大神後發現只要在 **named.conf.option** 中加入 `recursion no` 即可。接著在進行一次檢測就可以看到正常的結果了！
+
+> Everything is fine.
+
+
 **參考資料：**
 
 - [DNS Server on Debian 6](http://note.drx.tw/2008/08/serverdns-server-static-adsl.html)
