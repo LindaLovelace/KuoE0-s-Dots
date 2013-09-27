@@ -76,7 +76,7 @@ echo "python-pycurl-dbg hold" | sudo dpkg --set-selections
 前面提到 git 也可能會遇到該問題，解決的方法也是令 git 使用 OpenSSL 重新編譯 git 即可。
 
 [1]: http://linuxmint.com/
-[2]: http://blog.kuoe0.ch/posts/84358/prevent-apt-get-upgrade-to-upgrade-specific-packages
+[2]: http://blog.kuoe0.tw/posts/2012/09/21/prevent-apt-get-upgrade-to-upgrade-specific-packages
 [3]: http://blog.float.tw/
 [4]: http://blog.float.tw/2012/06/git-gnutls-handshake-error.html
 [gist]: https://gist.github.com/KuoE0/6192061

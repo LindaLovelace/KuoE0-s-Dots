@@ -113,4 +113,4 @@ Aug 24 02:07:17 SlaveDNS named[18779]: zone 5566.csie.ncku.edu.tw/IN: sending no
 - [[DNS] named.conf設定檔:master與slave](http://www.ccy.twbbs.org/blog/?p=349)
 - [設定 Master/Slave DNS Server](http://blog.roga.tw/2012/03/%E8%A8%AD%E5%AE%9A-masterslave-dns-server/)
 
-[1]: http://blog.kuoe0.ch/posts/2013/08/11/install-dns-server-on-ubuntu
+[1]: http://blog.kuoe0.tw/posts/2013/08/11/install-dns-server-on-ubuntu

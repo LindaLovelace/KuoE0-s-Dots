@@ -42,4 +42,4 @@ $ factor 131
 
 所以最後在判斷 `wc -w` 的結果是不是 2 個 word 即可，如果結果是 2 個 word 就表示該數字是質數並輸出。
 	
-[sieve]: http://blog.kuoe0.ch/posts/67538/prime-table-sieve-of-eratosthenes
+[sieve]: http://blog.kuoe0.tw/posts/2009/10/23/prime-table-sieve-of-eratosthenes

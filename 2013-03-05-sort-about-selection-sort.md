@@ -84,8 +84,8 @@ Slide on [Speaker Deck][3]
 
 (photo via [billaday][5], CC License)
 
-[1]: http://blog.kuoe0.ch/posts/84383/sort-about-bubble-sort
-[2]: http://blog.kuoe0.ch/posts/84424/sort-about-insertion-sort
+[1]: http://blog.kuoe0.tw/posts/2013/02/28/sort-about-bubble-sort
+[2]: http://blog.kuoe0.tw/posts/2013/03/04/sort-about-insertion-sort
 [3]: https://speakerdeck.com/kuoe0/selection-sort
 [4]: http://zh.wikipedia.org/wiki/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F
 [5]: http://www.flickr.com/photos/billselak/4173183227/

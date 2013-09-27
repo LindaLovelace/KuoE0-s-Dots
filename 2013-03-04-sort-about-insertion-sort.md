@@ -101,7 +101,7 @@ Slide on [Speaker Deck][3].
 
 (photo via [Giandomenico Ricci][2], CC License)
 
-[1]: http://blog.kuoe0.ch/posts/84383/sort-about-bubble-sort
+[1]: http://blog.kuoe0.tw/posts/2013/02/28/sort-about-bubble-sort
 [2]: http://www.flickr.com/photos/giando/434250668/
 [3]: https://speakerdeck.com/kuoe0/insertion-sort
 [4]: http://zh.wikipedia.org/wiki/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F

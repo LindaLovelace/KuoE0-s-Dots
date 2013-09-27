@@ -119,4 +119,4 @@ WordPress 提供的參數有：
 
 	文章分類名稱。	
 
- [1]: http://blog.kuoe0.ch/posts/84357/about-permalink
+ [1]: http://blog.kuoe0.tw/posts/2012/09/12/about-permalink

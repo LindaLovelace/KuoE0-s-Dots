@@ -167,7 +167,7 @@ Slide on [Speaker Deck][2]
 
 (photo via [guillermomadrid][4], CC License)
 
-[1]: http://blog.kuoe0.ch/posts/84428/sort-about-merge-sort
+[1]: http://blog.kuoe0.tw/posts/2013/03/06/sort-about-merge-sort
 [2]: https://speakerdeck.com/kuoe0/quick-sort
 [3]: http://zh.wikipedia.org/zh-tw/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F
 [4]: http://www.flickr.com/photos/guille/81452528/

@@ -55,7 +55,7 @@
 [6]: http://werdna1222coldcodes.blogspot.tw/2011/12/java.html
 [7]: http://caterpillar.onlyfun.net/Gossip/
 [8]: http://lmgtfy.com/?q=JAVA+%E6%95%99%E5%AD%B8&l=1
-[9]: http://blog.kuoe0.ch/posts/84366/book-review-journey-of-electricity
+[9]: http://blog.kuoe0.tw/posts/2012/10/28/book-review-journey-of-electricity
 [10]: http://www.flickr.com/photos/21042103@N03/3342173731/
 
 [feature photo]: http://i.minus.com/jEN6SuS1aTMHm.jpg

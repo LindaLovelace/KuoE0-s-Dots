@@ -208,7 +208,7 @@ P.S. 不過近來，成大電機王駿發教授提出了「橘色科技」的概
 (photo via [lrargerich][10], [R_x - renee barron][11], [Angela Radulescu][12], [Stuck in Customs][13], [JonathanCohen][14], [Corrie…][15], [judge_mental][16], [fiddle oak][17], [PetitPlat - Stephanie Kilgast][18], [Mariusz_Kucharczyk][19], CC License)
 
 [1]: http://www.anobii.com/books/%E9%A7%AD%E5%AE%A2%E8%88%87%E7%95%AB%E5%AE%B6/9789867794697/003bca9f19d7b292b4/
-[2]: http://blog.kuoe0.ch/posts/78813/orange-technology
+[2]: http://blog.kuoe0.tw/posts/2011/12/07/orange-technology
 [3]: http://www.anobii.com/e0/books
 [4]: http://www.anobii.com/books/%E5%A6%82%E4%BD%95%E9%96%B1%E8%AE%80%E4%B8%80%E6%9C%AC%E6%9B%B8/9789570517989/006bff571e00d9a14b/
 [5]: http://www.anobii.com/books/%E5%88%A5%E4%BB%A5%E7%82%BA%E9%82%84%E6%9C%8920%E5%B9%B4%EF%BC%8C%E4%BD%A0%E8%B7%9F%E7%88%B6%E6%AF%8D%E7%9B%B8%E8%99%95%E7%9A%84%E6%99%82%E9%96%93%E5%85%B6%E5%AF%A6%E5%8F%AA%E5%89%A9%E4%B8%8B55%E5%A4%A9/9789866272851/01a98caf4913ef78de/
