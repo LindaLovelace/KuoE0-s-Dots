@@ -158,3 +158,6 @@ def alt_add_digits(x):
 二進位下交錯加總 | log<sub>2</sub>N
 有限狀態機 | log<sub>2</sub>N
 
+**參考資料**
+
+[http://stackoverflow.com/questions/844867/check-if-a-number-is-divisible-by-3](http://stackoverflow.com/questions/844867/check-if-a-number-is-divisible-by-3)
