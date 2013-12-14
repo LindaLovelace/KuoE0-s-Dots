@@ -25,7 +25,7 @@ def divisible_3(x):
 def divisible_3(x):
 	while x >= 10:
 		x = add_digits(x)
-	return x in [3, 6, 9]
+	return x in [0, 3, 6, 9]
 ```
 
 不過，為了將十進位的數字加總，仍然需要透過除法來進行，是否有不需要除法的方式呢？！以下提供四種方法：
