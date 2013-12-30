@@ -1,7 +1,7 @@
 <!--
 [date]: 2013-12-29
 [title]: Arduino 與 GY-521 MPU6050 慣性測量感測器
-[name]: arduino-with-gy-521-mpu6505-imu-sensor
+[name]: arduino-with-gy-521-mpu6050-imu-sensor
 [tag]: Arduino, OS X, CLI | 命令列介面, Ubuntu, I2Cdevlib, accelerometer | 加速計, gyroscope | 陀螺儀, MPU6050, IMU | 慣性測量單元
 [photo]: http://i.minus.com/jCBrxpn4qp1tN.jpg
 -->
@@ -35,7 +35,7 @@ A4    |   ↔︎   | SDA
 
 這樣接線的原因是 I<sup>2</sup>C 就是透過兩條線來進行通訊，分別是 SCL (clock rate) 與 SDA (data)。而在 Arduino Uno 這塊板子中，A5 剛好就是 SCL 線，A4 則是 SDA 現，所以直接這樣接就完成了。
 
-另外，由於 I<sup>2</sup>C 的通訊是透過固定位址的，預設 MPU6505 透過 I<sup>2</sup>C 通訊時的位址是 `0x68`。如果需要改變這個位址的話，可以透過將 AD0 這接腳接到 3.3V 的電位，如此一來，該 MPU6050 的 I<sup>2</sup>C 的位址將更變為 `0x69`。
+另外，由於 I<sup>2</sup>C 的通訊是透過固定位址的，預設 MPU6050 透過 I<sup>2</sup>C 通訊時的位址是 `0x68`。如果需要改變這個位址的話，可以透過將 AD0 這接腳接到 3.3V 的電位，如此一來，該 MPU6050 的 I<sup>2</sup>C 的位址將更變為 `0x69`。
 
 Software Configuration
 ----------------------
