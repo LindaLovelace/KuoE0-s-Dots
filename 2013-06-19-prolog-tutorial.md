@@ -416,7 +416,9 @@ quicksort([X|Xs]) -->
 
 其中 `-s` 是指將接下來的檔案以 script 的方式執行，而 `-q` 則是叫 SWI Prolog 安靜一點，不要輸出一些有的沒有。
 
+本文同步刊載於[程式人雜誌 2013 年 8 月][4]。
 
 [1]: http://www.swi-prolog.org/
 [2]: http://zh.wikipedia.org/wiki/%E6%8A%BD%E8%B1%A1%E8%B3%87%E6%96%99%E5%9E%8B%E5%88%A5
 [3]: https://zh.wikipedia.org/wiki/Prolog
+[4]: http://programmermagazine.github.io/201308/htm/article3.html
