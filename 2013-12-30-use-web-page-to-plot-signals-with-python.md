@@ -57,7 +57,10 @@ if __name__ == "__main__":
 
 第三部分則是 `__main__` 這部分，這邊就是開始運行前面設定好的網頁應用。首先是先設定該應用要使用的埠號 (port)。接著 `tornado.ioloop.IOLoop.instance().start()` 這行就會將 tornado 服務啟動，如此該網頁就開始服務了。
 
-如果不想利用 `self.write` 的方式來寫 HTML tag 的話，應該可以考慮像 [Jinja 2][4] 之類的樣板引擎來使用，如此就可以擁有完整的 MVC 模型了！
+~~如果不想利用 `self.write` 的方式來寫 HTML tag 的話，應該可以考慮像 [Jinja 2][4] 之類的樣板引擎來使用，如此就可以擁有完整的 MVC 模型了！~~
+
+既然有了 MVC 的 M 與 C 了，那麼 V (View) 怎麼可以缺少呢！可以引入 `tornado.template` 來增加模板的功能，詳細可以參考官方文件－[tornado.template — Flexible output generation][9]。
+
 
 Back-end
 --------
@@ -308,6 +311,12 @@ if __name__ == "__main__":
 
 我自己本身是用來量測 MPU6050 該慣性測量感測器，如有需要歡迎到我的 Github 頁面下載，也歡迎 fork 回去自行修改：[MPU6050-WebPlot][8]。
 
+**修改記錄**
+
+2014/01/04:
+
+- 新增 tornado 中 View 模組－tornado.template
+
 [1]: http://www.tornadoweb.org/
 [2]: http://www.flotcharts.org/
 [3]: http://www.jqplot.com/
@@ -316,6 +325,7 @@ if __name__ == "__main__":
 [6]: http://www.flotcharts.org/flot/examples/realtime/index.html
 [7]: https://github.com/flot/flot/blob/master/API.md
 [8]: https://github.com/KuoE0/MPU6050-WebPlot
+[9]: http://www.tornadoweb.org/en/stable/template.html
 
 [p1]: http://i.minus.com/jbh9NXX4P55LOT.png
 [p2]: http://i.minus.com/jbaEObnAljqqOa.png
