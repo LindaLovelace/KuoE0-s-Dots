@@ -202,4 +202,5 @@ Source Code
 
 Source code on [gist](https://gist.github.com/KuoE0/8346849).
 
-Live demo on [codepen](http://codepen.io/KuoE0/pen/pInFu).
+<p data-height="160" data-theme-id="0" data-slug-hash="pInFu" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/KuoE0/pen/pInFu'>pInFu</a> by KuoE0 (<a href='http://codepen.io/KuoE0'>@KuoE0</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
