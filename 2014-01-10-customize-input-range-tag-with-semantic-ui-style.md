@@ -87,6 +87,7 @@ input[type="range"]::-webkit-slider-thumb {
 	border-radius: 50rem;
 	height: 0.7em;
 	width: 0.7em;
+}
 ```
 
 效果如下圖：
@@ -95,7 +96,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 這時候樣子大概就完成了！不過怎麼好像還是有些不一樣的地方，就是控制點與外框的距離。只要在替 `input[type="range"]` 加上個 `padding` 的樣式就大功告成了！程式碼如下：
 
-```
+```css
 input[type="range"] {
 	-webkit-appearance: none;
 	border-width: 1px;
