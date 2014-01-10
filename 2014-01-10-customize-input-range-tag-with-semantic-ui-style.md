@@ -30,7 +30,7 @@ input[type="range"] {
 
 ![step1](http://i.minus.com/j7zj5CJCA0YUW.png)
 
-這樣一來，預設的那條拉條就會消失了，只會剩下一個控制點。為了要搭配 Semantic UI 中 `<input type="checkbox" />` 的[第三種樣式](http://semantic-ui.com/collections/form.html)，下一步就是加上一個左右兩邊都是圓弧的淺灰色外框。程式碼如下：
+這樣一來，預設的那條拉條就會消失了，只會剩下一個控制點。為了要搭配 Semantic UI 中的 [toggle checkbox](http://semantic-ui.com/modules/checkbox.html)，下一步就是加上一個左右兩邊都是圓弧的淺灰色外框。程式碼如下：
 
 ```css
 input[type="range"] {
