@@ -83,7 +83,7 @@ input[type="range"]::-webkit-slider-thumb {
 ```css
 input[type="range"]::-webkit-slider-thumb {
 	-webkit-appearance: none;
-	background-color: #89B84C;
+	background: #89B84C;
 	border-radius: 50rem;
 	height: 0.7em;
 	width: 0.7em;
@@ -111,8 +111,8 @@ input[type="range"] {
 ![step6](http://i.minus.com/jbizg7YfI092ic.png)
 
 
-Semantic UI 化
---------------
+More Semantic
+-------------
 
 上面的 CSS 雖然可以打造出外觀與 Semantic UI 風格一致的 range input，但為了與 Semantic UI 一起使用，應該將 selector 與 Semantic UI 更一致一些才對。看了一下 checkbox input 的 selector 是 `.ui.slider.checkbox`，所以就直接在原本的 selector 前面加上 `.ui.slider.range` 即可。程式碼如下：
 
@@ -134,6 +134,66 @@ Semantic UI 化
 	width: 0.7em;
 }
 ```
+
+Work on Firefox
+---------------
+
+在 Firefox 上，所有 `-webkit` 前綴的敘述都將會失效。如果按照原本的程式碼執行，會看到以下的效果：
+
+![work on firefox](http://i.minus.com/jbgDIcacGYTvFj.png)
+
+可以發現外框的效果還是有的，但是莫名中間多出了一條黑線。這是因為 Firefox 有一個 pseudo element 叫做 `-moz-range-track`，用來定義 range input 的拉條樣式。為了讓該拉條消失，需要將其背影與外框給去除。程式碼如下：
+
+```css
+.ui.slider.range input[type="range"]::-moz-range-track {
+	background: none;
+	border: none;
+}
+```
+
+效果如下：
+
+![step1 on firefox](http://i.minus.com/jbc5p8R2YoASV4.png)
+
+由於 `-webkit-slider-thumb` 不會作用，所以控制點將不會有任何更動，持續保持 Firefox 預設的樣式。所以我們需要利用 Firefox 的另一個 pseudo element 叫做 `-moz-range-thumb`，被用來定義控制點樣式。如果依照在 `-webkit-slider-thumb` 相同的敘述的話：
+
+```css
+.ui.slider.range input[type="range"]::-moz-range-thumb {
+	background: #89B84C;
+	border-radius: 50rem;
+	height: 0.7em;
+	width: 0.7em;
+}
+```
+
+會發現控制點上仍有一個灰色外框：
+
+![step2 on firefox](http://i.minus.com/jHK80sjdMDmxW.png)
+
+所以做後一步就是把控制點的外框去除或變成跟背景一樣的顏色，加入 `border-color: #89B84C;` 即可，程式碼如下：
+
+```css
+.ui.slider.range input[type="range"]::-moz-range-thumb {
+	background: #89B84C;
+	border-color: #89B84C;
+	border-radius: 50rem;
+	height: 0.7em;
+	width: 0.7em;
+}
+```
+
+![step3 on firefox](http://i.minus.com/jZN0h9UOl2fsf.png)
+
+這樣就大功告成了！但是要注意，千萬不可以因為懶惰而這樣寫：
+
+```css
+.ui.slider.range input[type="range"]::-webkit-slider-thumb, 
+.ui.slider.range input[type="range"]::-moz-range-thumb {
+	/* something */
+}
+```
+
+這樣的寫法，在兩個瀏覽器上都會被視為 invalid selector，因此會完全沒有效果！
 
 Source Code
 -----------
