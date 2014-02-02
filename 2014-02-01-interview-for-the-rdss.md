@@ -119,7 +119,7 @@
 
 以下是我研發替代役面試時所使用的履歷：
 
-[履歷表](https://www.dropbox.com/s/c72njr51fmek3ab/Resume-20131129.pdf)
+[履歷表](https://www.dropbox.com/s/etotxbeilrx5f8o/Resume-20131129-Online.pdf)
 
 (photo via [bpsusf](http://www.flickr.com/photos/usfbps/4597078894/), by CC License)
 
