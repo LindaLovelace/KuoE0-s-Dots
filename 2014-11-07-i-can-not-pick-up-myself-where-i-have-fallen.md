@@ -3,7 +3,7 @@
 [title]: 一個跌倒了站不起來的故事
 [name]: i-can-not-pick-up-myself-where-i-have-fallen
 [tag]: interview | 面試, RDSS | 研發替代役
-[photo]: 
+[photo]: http://i.minus.com/jmXL2lKTMgK2w.jpg
 -->
 
 ![fallen](http://i.minus.com/jmXL2lKTMgK2w.jpg)
