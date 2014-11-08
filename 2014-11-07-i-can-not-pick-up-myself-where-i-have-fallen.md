@@ -40,39 +40,45 @@ photo credit: <a href="https://www.flickr.com/photos/anantns/6749734085/">Anant 
 題外話：
 ------
 
-不過還是想抱怨一下那位面試官，他一直給我一種很瞧不起人的感覺，一直用這也沒聽過的語句來挑戰你。不過我個人覺得比較機車的是他對於我寫的程式碼都抱著一種懷疑輕挑的態度。像是去年的程式我要交換兩個變數的值，我寫了個類似這樣的語法：
+不過還是想抱怨一下那位面試官，他一直給我一種很瞧不起人的感覺，一直用這也沒聽過的語句來挑戰你。不過我個人覺得比較機車的是他對於我寫的程式碼都抱著一種懷疑輕挑的態度。像是去年的程式我要交換 linked list 的節點，面試官規定不可以交換節點的內容，只能改變連結，我寫了個類似這樣的語法：
 
 ```c++
 #include <algorithm>
+using namespace std;
 
-// bla bla bla..
-int a = 0, b = 1;
-int *p1 = &a, *p2 = &b;
+struct Node {
+    int val;
+    Node* next;
+    Node(int x = 0, Node* p = NULL)
+        : val(x), next(p) {}
+};
 
-cout << (*p1) << " " << (*p2) << endl;
-sawp(p1, p2);
-cout << (*p1) << " " << (*p2) << endl;
+int main() {
+    Node *p1 = new Node, *p2 = new Node;
+    p1->val = 0, p2->val = 1;
+    p1->next = p2;
+    swap(p1->next, p2->next);
+    return 0;
+}
+
 ```
 
-2014/11/08 補充：題目的要求是對一個 linked list 的節點進行交換，不能只交換節點內的值。所以上面的例子我才會先用一個整數指標指向一個整數，然後只換指標所存的位址。
-
-基本上，STL 提供的 swap 本身就是以傳參考的方式來傳遞參數，因此是可以有效交換 p1 與 p2 所存的位址。以下是 STL 的 swap 實作：
+基本上，STL 提供的 swap 本身就是以傳參考的方式來傳遞參數，因此是可以有效交換 p1 所指向的節點與 p2 所指向的節點。以上面的程式碼來說，原本的 linked list 是由 p1 開始，並指向 p2。但經過交換後，會變成 p2 開始，並指向 p1。以下是 STL 的 swap 實作：
 
 ```c++
-template <class T> void swap ( T& a, T& b )
-{
-	T c(a); a=b; b=c;
+template <class T> void swap ( T& a, T& b ) {
+    T c(a); a=b; b=c;
 }
 ```
 
-但他一直針對這個 swap 攻擊，還一直笑說「怎麼可能這樣就可以換，你確定？！」為了這一點，我們爭論 STL 的 swap 是否為 call by reference 很久...。
+但他一直針對這個 swap 攻擊，還一直笑說「怎麼可能這樣就可以換，你確定？！」為了這一點，我們爭論 STL 的 swap 是否為 call by reference 很久。最後我說我自己寫一個 swap 好了，他卻又說算了...。
 
 所以今年，如果我要交換我絕對不會用 swap 的...畢竟遇到同一個嘛！今年我寫了一段程式是需要傳遞指標作為參數，但這個參數如果在函式內被更動時，那麼函式外的實體也要被更動。所以我的函式原型就這樣寫：
 
 ```c++
 void foo(Node* &p) {
-	// bla bla bla...
-	p = x;
+    // bla bla bla...
+    p = x;
 }
 ```
 
@@ -80,9 +86,9 @@ void foo(Node* &p) {
 
 ```c++
 Node* foo(Node* p) {
-	// bla bla bla..
-	p = x;
-	return p;
+    // bla bla bla..
+    p = x;
+    return p;
 }
 ```
 
