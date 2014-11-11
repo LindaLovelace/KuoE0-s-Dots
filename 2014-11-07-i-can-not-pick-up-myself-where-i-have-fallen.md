@@ -54,10 +54,43 @@ struct Node {
 };
 
 int main() {
-    Node *p1 = new Node, *p2 = new Node;
-    p1->val = 0, p2->val = 1;
-    p1->next = p2;
-    swap(p1->next, p2->next);
+    
+    Node *head;
+
+    // 建構 linked list
+    // bla bla bla...
+    
+    // 從中取出欲交換的兩點
+    Node *p1 = linked list 中的某一點;
+    Node *pre1 = p1 的前一個點;
+    Node *p2 = linked list 中的某一點;
+    Node *pre2 = p2 的前一個點;
+    
+    // 交換 p1 與 p2 的位置
+    if (p1 != p2) {
+        
+        // 父節點為 head 時替換掉 head
+        if (p1 == head) {
+            head = p2;
+            pre2->next = p1;
+        }
+        else if (p2 == head) {
+            head = p1;
+            pre1->next = p2;
+        }
+        else {
+            // 交換父節點的子節點
+            swap(pre1->next, pre2->next);
+        }
+        
+        // 交換子結點
+        swap(p1->next, p2->next);
+        
+        // 兩點相鄰的狀況
+        if (p1 == pre2) p2->next = p1;
+        if (p2 == pre1) p1->next = p2;
+    }
+
     return 0;
 }
 
